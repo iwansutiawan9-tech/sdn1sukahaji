@@ -403,7 +403,8 @@
 
       fetch(API_URL, {
         method: "POST",
-        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        mode: "cors",
+        redirect: "follow",
         body: JSON.stringify({ action: "login", nisn: nisn, tglLahir: tgl })
       })
       .then(res => res.json())
@@ -422,11 +423,10 @@
       .catch(err => {
         btn.disabled = false;
         btn.innerHTML = `<span>Periksa Data Profil</span><i class="fa-solid fa-arrow-right text-xs"></i>`;
-        document.getElementById('loginErrorText').innerText = "Gagal terhubung ke server database.";
+        document.getElementById('loginErrorText').innerText = "Gagal terhubung ke server database: " + err;
         errBox.classList.remove('hidden');
       });
     }
-
     function renderStudentView() {
       document.getElementById('loginSection').classList.add('hidden');
       document.getElementById('verificationSection').classList.remove('hidden');
@@ -668,7 +668,8 @@
 
       fetch(API_URL, {
         method: "POST",
-        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        mode: "cors",
+        redirect: "follow",
         body: JSON.stringify({
           action: "submit",
           rowIndex: currentRowIndex,
