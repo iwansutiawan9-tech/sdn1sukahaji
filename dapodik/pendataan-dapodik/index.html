@@ -302,8 +302,8 @@
 
   <!-- SCRIPT FRONTEND LOGIC -->
   <script>
-    // URL ENDPOINT GOOGLE APPS SCRIPT
-    const API_URL = "https://script.google.com/macros/s/AKfycbyK8oQPjSmmS3Lf91BU_tpmPHec0rT3HnrwO9U6YyZl4xuUBsve24NlxGIQlqP-GnRLeA/exec";
+    // URL ENDPOINT GOOGLE APPS SCRIPT TERBARU
+    const API_URL = "https://script.google.com/macros/s/AKfycbyuplWzdtC8kQa2GcSPSrML1dNCWFGbhaO7-pSGOFoxZPlHk3sGjYaI4on_lqZtuJH9kg/exec";
 
     let currentStudent = null;
     let currentRowIndex = null;
@@ -403,6 +403,8 @@
 
       fetch(API_URL, {
         method: "POST",
+        mode: "cors",
+        redirect: "follow",
         body: JSON.stringify({ action: "login", nisn: nisn, tglLahir: tgl })
       })
       .then(res => res.json())
@@ -421,11 +423,10 @@
       .catch(err => {
         btn.disabled = false;
         btn.innerHTML = `<span>Periksa Data Profil</span><i class="fa-solid fa-arrow-right text-xs"></i>`;
-        document.getElementById('loginErrorText').innerText = "Gagal terhubung ke server database.";
+        document.getElementById('loginErrorText').innerText = "Gagal terhubung ke server database: " + err;
         errBox.classList.remove('hidden');
       });
     }
-
     function renderStudentView() {
       document.getElementById('loginSection').classList.add('hidden');
       document.getElementById('verificationSection').classList.remove('hidden');
@@ -653,7 +654,6 @@
         }
       });
 
-      // Koordinat
       const newLat = document.getElementById('coord_lintang').value;
       const newLong = document.getElementById('coord_bujur').value;
       if (newLat !== (currentStudent['Lintang'] || '') || newLong !== (currentStudent['Bujur'] || '')) {
@@ -668,6 +668,8 @@
 
       fetch(API_URL, {
         method: "POST",
+        mode: "cors",
+        redirect: "follow",
         body: JSON.stringify({
           action: "submit",
           rowIndex: currentRowIndex,
