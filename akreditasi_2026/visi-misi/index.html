@@ -1,1 +1,563 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visi dan Misi - SD Negeri 1 Sukahaji</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0f172a;
+    --royal: #1e3a8a;
+    --blue-soft: #eff6ff;
+    --gold: #d97706;
+    --gold-light: #fef3c7;
+    --emerald: #059669;
+    --emerald-light: #ecfdf5;
+    --text-main: #1e293b;
+    --text-muted: #475569;
+    --border: #e2e8f0;
+  }
 
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    color: var(--text-main);
+    margin: 0;
+    padding: 25px 15px;
+    line-height: 1.6;
+  }
+
+  /* TOOLBAR AKSI */
+  .action-bar {
+    max-width: 1050px;
+    margin: 0 auto 20px auto;
+    background: #ffffff;
+    padding: 14px 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border: 1px solid var(--border);
+  }
+  .action-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--royal);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 9px;
+    font-size: 13.5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn-print {
+    background: var(--royal);
+    color: white;
+    box-shadow: 0 3px 10px rgba(30, 58, 138, 0.25);
+  }
+  .btn-print:hover { background: #172554; transform: translateY(-1px); }
+  .btn-word {
+    background: var(--emerald);
+    color: white;
+    box-shadow: 0 3px 10px rgba(5, 150, 105, 0.25);
+  }
+  .btn-word:hover { background: #047857; transform: translateY(-1px); }
+
+  /* KANVAS UTAMA */
+  .page-canvas {
+    max-width: 1050px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    overflow: hidden;
+    border: 1px solid #cbd5e1;
+  }
+
+  /* HEADER BANNER ELEGAN */
+  .header-banner {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1d4ed8 100%);
+    color: white;
+    padding: 38px 40px 32px 40px;
+    text-align: center;
+    position: relative;
+    border-bottom: 5px solid var(--gold);
+  }
+  .school-pill {
+    display: inline-block;
+    background: rgba(254, 243, 199, 0.15);
+    border: 1px solid #fbbf24;
+    color: #fde68a;
+    padding: 5px 18px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .header-banner h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+  .header-banner p {
+    margin: 6px 0 0 0;
+    font-size: 14px;
+    color: #cbd5e1;
+  }
+
+  .content-body {
+    padding: 36px 42px;
+  }
+
+  /* KARTU VISI UTAMA */
+  .visi-card {
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+    border: 2px solid #f59e0b;
+    border-radius: 20px;
+    padding: 30px 36px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 36px;
+    box-shadow: 0 10px 25px rgba(217, 119, 6, 0.08);
+  }
+  .section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold);
+    color: white;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    padding: 6px 20px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 10px rgba(217, 119, 6, 0.3);
+  }
+  .visi-text {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: #78350f;
+    margin: 0;
+    line-height: 1.45;
+  }
+
+  /* JUDUL BAGIAN */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .section-header h2 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--royal);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .section-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, #93c5fd, transparent);
+  }
+
+  /* GRID MISI & INDIKATOR TERPADU */
+  .misi-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .misi-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 18px 22px;
+    transition: all 0.2s ease;
+  }
+  .misi-row:hover {
+    background: #ffffff;
+    border-color: #93c5fd;
+    box-shadow: 0 6px 18px rgba(30, 58, 138, 0.06);
+  }
+  .misi-box, .indikator-box {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .indikator-box {
+    border-left: 2px dashed #cbd5e1;
+    padding-left: 18px;
+  }
+  .num-badge {
+    min-width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: var(--royal);
+    color: white;
+    font-weight: 800;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    box-shadow: 0 3px 8px rgba(30, 58, 138, 0.2);
+  }
+  .ind-badge {
+    min-width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background: var(--emerald);
+    color: white;
+    font-weight: 800;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    box-shadow: 0 3px 8px rgba(5, 150, 105, 0.2);
+  }
+  .box-label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 3px;
+    display: block;
+  }
+  .label-misi { color: var(--royal); }
+  .label-ind { color: var(--emerald); }
+  .box-desc {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-main);
+    text-align: justify;
+  }
+
+  /* FOOTER MOTTO PENUTUP (TANPA TANDA TANGAN) */
+  .footer-banner {
+    margin-top: 24px;
+    background: var(--blue-soft);
+    border: 1px solid #bfdbfe;
+    border-left: 5px solid var(--royal);
+    padding: 16px 24px;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 13.5px;
+    color: #1e3a8a;
+  }
+
+  @media (max-width: 820px) {
+    .misi-row { grid-template-columns: 1fr; }
+    .indikator-box { border-left: none; border-top: 1px dashed #cbd5e1; padding-left: 0; padding-top: 12px; }
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .action-bar { display: none; }
+    .page-canvas { box-shadow: none; border: none; max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOOLBAR TOMBOL -->
+<div class="action-bar">
+  <div class="action-title">
+    ✨ Halaman Resmi Visi, Misi, &amp; Indikator Ketercapaian Misi — SDN 1 Sukahaji
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-print" onclick="window.print()">🖨️ Cetak / Simpan PDF</button>
+    <button class="btn btn-word" onclick="unduhWord()">📥 Unduh File Word (.doc)</button>
+  </div>
+</div>
+
+<!-- HALAMAN UTAMA -->
+<div class="page-canvas" id="AreaVisiMisi">
+
+  <!-- HEADER SEKOLAH -->
+  <div class="header-banner">
+    <div class="school-pill">DINAS PENDIDIKAN KABUPATEN CIAMIS • KECAMATAN CIHAURBEUTI</div>
+    <h1>VISI DAN MISI SD NEGERI 1 SUKAHAJI</h1>
+    <p>Jln. Cihaurbeuti No. 86 Desa Sukahaji, Kec. Cihaurbeuti, Kab. Ciamis, Provinsi Jawa Barat | NPSN: 20212211</p>
+  </div>
+
+  <div class="content-body">
+
+    <!-- VISI SEKOLAH -->
+    <div class="visi-card">
+      <div class="section-badge">🌟 VISI SATUAN PENDIDIKAN</div>
+      <p class="visi-text">
+        “Terwujudnya murid berkarakter yang cerdas, terampil, mandiri, dan berwawasan global, berlandaskan iman dan takwa.”
+      </p>
+    </div>
+
+    <!-- MISI & INDIKATOR KETERCAPAIAN MISI -->
+    <div class="section-header">
+      <h2>🎯 Misi &amp; Indikator Ketercapaian Misi</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="misi-list">
+      <!-- POIN 1 -->
+      <div class="misi-row">
+        <div class="misi-box">
+          <div class="num-badge">01</div>
+          <div>
+            <span class="box-label label-misi">Misi 1 • Keimanan &amp; Ketakwaan</span>
+            <p class="box-desc">Menumbuhkan keimanan dan ketakwaan sebagai landasan sikap, perilaku, dan kehidupan murid.</p>
+          </div>
+        </div>
+        <div class="indikator-box">
+          <div class="ind-badge">✓ 1</div>
+          <div>
+            <span class="box-label label-ind">Indikator Ketercapaian 1</span>
+            <p class="box-desc">Terbentuknya budaya religius; murid menunjukkan perilaku yang mencerminkan iman dan takwa; serta pendidik menjadi teladan dalam penerapannya.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- POIN 2 -->
+      <div class="misi-row">
+        <div class="misi-box">
+          <div class="num-badge">02</div>
+          <div>
+            <span class="box-label label-misi">Misi 2 • Budaya Sekolah Berkarakter</span>
+            <p class="box-desc">Membangun budaya sekolah yang berkarakter melalui keteladanan, pembiasaan, disiplin, tanggung jawab, dan kepedulian.</p>
+          </div>
+        </div>
+        <div class="indikator-box">
+          <div class="ind-badge">✓ 2</div>
+          <div>
+            <span class="box-label label-ind">Indikator Ketercapaian 2</span>
+            <p class="box-desc">Terwujudnya budaya sekolah yang berintegritas; terjadi perubahan perilaku positif murid; serta seluruh warga sekolah menunjukkan keteladanan, disiplin, tanggung jawab, dan kepedulian.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- POIN 3 -->
+      <div class="misi-row">
+        <div class="misi-box">
+          <div class="num-badge">03</div>
+          <div>
+            <span class="box-label label-misi">Misi 3 • Pembelajaran Mendalam (Deep Learning)</span>
+            <p class="box-desc">Menyelenggarakan pembelajaran yang mendalam, bermakna, menyenangkan, dan berpusat pada murid untuk mengembangkan kemampuan berpikir dan karakter.</p>
+          </div>
+        </div>
+        <div class="indikator-box">
+          <div class="ind-badge">✓ 3</div>
+          <div>
+            <span class="box-label label-ind">Indikator Ketercapaian 3</span>
+            <p class="box-desc">Terlaksananya pembelajaran yang berkesadaran, bermakna, menggembirakan, dan sesuai kebutuhan murid; berkembangnya kemampuan berpikir dan karakter; serta asesmen digunakan untuk perbaikan pembelajaran.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- POIN 4 -->
+      <div class="misi-row">
+        <div class="misi-box">
+          <div class="num-badge">04</div>
+          <div>
+            <span class="box-label label-misi">Misi 4 • Kemandirian, Bakat, &amp; Potensi</span>
+            <p class="box-desc">Mengembangkan kemandirian, keterampilan, bakat, dan potensi murid melalui pengalaman belajar dan kegiatan yang beragam.</p>
+          </div>
+        </div>
+        <div class="indikator-box">
+          <div class="ind-badge">✓ 4</div>
+          <div>
+            <span class="box-label label-ind">Indikator Ketercapaian 4</span>
+            <p class="box-desc">Murid menunjukkan kemandirian, keterampilan, kreativitas, percaya diri, dan tanggung jawab; serta berkembangnya bakat, minat, potensi, dan prestasi murid.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- POIN 5 -->
+      <div class="misi-row">
+        <div class="misi-box">
+          <div class="num-badge">05</div>
+          <div>
+            <span class="box-label label-misi">Misi 5 • Adaptasi IPTEK &amp; Jati Diri Bangsa</span>
+            <p class="box-desc">Membangun ekosistem pendidikan yang adaptif terhadap perkembangan ilmu pengetahuan dan teknologi dengan tetap berlandaskan nilai dan jati diri bangsa.</p>
+          </div>
+        </div>
+        <div class="indikator-box">
+          <div class="ind-badge">✓ 5</div>
+          <div>
+            <span class="box-label label-ind">Indikator Ketercapaian 5</span>
+            <p class="box-desc">Meningkatnya kemampuan warga sekolah memanfaatkan teknologi secara kreatif dan bertanggung jawab; berkembangnya literasi digital dan wawasan global murid tanpa kehilangan nilai agama dan jati diri bangsa.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- POIN 6 -->
+      <div class="misi-row">
+        <div class="misi-box">
+          <div class="num-badge">06</div>
+          <div>
+            <span class="box-label label-misi">Misi 6 • Profesionalisme &amp; Budaya Belajar PTK</span>
+            <p class="box-desc">Mengembangkan profesionalisme dan budaya belajar pendidik serta tenaga kependidikan secara berkelanjutan.</p>
+          </div>
+        </div>
+        <div class="indikator-box">
+          <div class="ind-badge">✓ 6</div>
+          <div>
+            <span class="box-label label-ind">Indikator Ketercapaian 6</span>
+            <p class="box-desc">Meningkatnya kompetensi pendidik melalui pengembangan profesional, penerapan hasil belajar, refleksi, kolaborasi, dan berbagi praktik baik yang berdampak pada mutu pembelajaran.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- POIN 7 -->
+      <div class="misi-row">
+        <div class="misi-box">
+          <div class="num-badge">07</div>
+          <div>
+            <span class="box-label label-misi">Misi 7 • Tata Kelola Berintegritas &amp; Kolaboratif</span>
+            <p class="box-desc">Mewujudkan tata kelola sekolah yang berintegritas, kolaboratif, transparan, efektif, dan berorientasi pada peningkatan mutu pendidikan.</p>
+          </div>
+        </div>
+        <div class="indikator-box">
+          <div class="ind-badge">✓ 7</div>
+          <div>
+            <span class="box-label label-ind">Indikator Ketercapaian 7</span>
+            <p class="box-desc">Terlaksananya tata kelola yang sistematis, transparan, akuntabel, dan kolaboratif; sumber daya sekolah digunakan sesuai prioritas; serta terjadi perbaikan mutu secara berkelanjutan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER BUDAYA SEKOLAH (TANPA TANDA TANGAN) -->
+    <div class="footer-banner">
+      <strong>🌿 Semangat Budaya Sekolah SDN 1 Sukahaji:</strong><br>
+      <em>“Silih Asih, Silih Asah, Silih Asuh — Bersama Komunitas Belajar Sahakarya Mewujudkan Pendidikan yang Berkesadaran, Bermakna, dan Menggembirakan.”</em>
+    </div>
+
+  </div>
+</div>
+
+<!-- AREA KHUSUS UNTUK EKSPOR WORD (.DOC) TANPA TANDA TANGAN -->
+<div id="AreaWord" style="display:none;">
+  <div style="text-align:center; font-family:'Times New Roman', serif;">
+    <h2 style="margin:0; font-size:16pt; color:#1e3a8a;">VISI, MISI, DAN INDIKATOR KETERCAPAIAN MISI</h2>
+    <h3 style="margin:3px 0; font-size:14pt;">SD NEGERI 1 SUKAHAJI TAHUN AJARAN 2026/2027</h3>
+    <p style="margin:2px 0; font-size:10.5pt;">Jln. Cihaurbeuti No. 86 Desa Sukahaji, Kec. Cihaurbeuti, Kabupaten Ciamis | NPSN: 20212211</p>
+    <hr style="border:1.5pt solid #1e3a8a; margin-top:8px;">
+  </div>
+
+  <table style="width:100%; border-collapse:collapse; margin-top:12px; margin-bottom:16px; font-family:'Times New Roman', serif;">
+    <tr>
+      <td style="background-color:#FEF3C7; border:1.5pt solid #D97706; padding:14pt; text-align:center;">
+        <div style="font-size:11pt; font-weight:bold; color:#B45309; letter-spacing:1px;">VISI SD NEGERI 1 SUKAHAJI</div>
+        <div style="font-size:15pt; font-weight:bold; font-style:italic; color:#78350F; margin-top:6pt;">
+          “Terwujudnya murid berkarakter yang cerdas, terampil, mandiri, dan berwawasan global, berlandaskan iman dan takwa.”
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <table style="width:100%; border-collapse:collapse; font-family:'Times New Roman', serif; font-size:11pt;">
+    <thead>
+      <tr>
+        <th style="width:6%; background-color:#1e3a8a; color:white; border:1pt solid #000; padding:7pt; text-align:center;">No</th>
+        <th style="width:47%; background-color:#1e3a8a; color:white; border:1pt solid #000; padding:7pt; text-align:center;">Misi Satuan Pendidikan</th>
+        <th style="width:47%; background-color:#059669; color:white; border:1pt solid #000; padding:7pt; text-align:center;">Indikator Ketercapaian Misi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border:1pt solid #000; padding:7pt; text-align:center; font-weight:bold;">1</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Menumbuhkan keimanan dan ketakwaan sebagai landasan sikap, perilaku, dan kehidupan murid.</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Terbentuknya budaya religius; murid menunjukkan perilaku yang mencerminkan iman dan takwa; serta pendidik menjadi teladan dalam penerapannya.</td>
+      </tr>
+      <tr>
+        <td style="border:1pt solid #000; padding:7pt; text-align:center; font-weight:bold;">2</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Membangun budaya sekolah yang berkarakter melalui keteladanan, pembiasaan, disiplin, tanggung jawab, dan kepedulian.</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Terwujudnya budaya sekolah yang berintegritas; terjadi perubahan perilaku positif murid; serta seluruh warga sekolah menunjukkan keteladanan, disiplin, tanggung jawab, dan kepedulian.</td>
+      </tr>
+      <tr>
+        <td style="border:1pt solid #000; padding:7pt; text-align:center; font-weight:bold;">3</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Menyelenggarakan pembelajaran yang mendalam, bermakna, menyenangkan, dan berpusat pada murid untuk mengembangkan kemampuan berpikir dan karakter.</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Terlaksananya pembelajaran yang berkesadaran, bermakna, menggembirakan, dan sesuai kebutuhan murid; berkembangnya kemampuan berpikir dan karakter; serta asesmen digunakan untuk perbaikan pembelajaran.</td>
+      </tr>
+      <tr>
+        <td style="border:1pt solid #000; padding:7pt; text-align:center; font-weight:bold;">4</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Mengembangkan kemandirian, keterampilan, bakat, dan potensi murid melalui pengalaman belajar dan kegiatan yang beragam.</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Murid menunjukkan kemandirian, keterampilan, kreativitas, percaya diri, dan tanggung jawab; serta berkembangnya bakat, minat, potensi, dan prestasi murid.</td>
+      </tr>
+      <tr>
+        <td style="border:1pt solid #000; padding:7pt; text-align:center; font-weight:bold;">5</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Membangun ekosistem pendidikan yang adaptif terhadap perkembangan ilmu pengetahuan dan teknologi dengan tetap berlandaskan nilai dan jati diri bangsa.</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Meningkatnya kemampuan warga sekolah memanfaatkan teknologi secara kreatif dan bertanggung jawab; berkembangnya literasi digital dan wawasan global murid tanpa kehilangan nilai agama dan jati diri bangsa.</td>
+      </tr>
+      <tr>
+        <td style="border:1pt solid #000; padding:7pt; text-align:center; font-weight:bold;">6</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Mengembangkan profesionalisme dan budaya belajar pendidik serta tenaga kependidikan secara berkelanjutan.</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Meningkatnya kompetensi pendidik melalui pengembangan profesional, penerapan hasil belajar, refleksi, kolaborasi, dan berbagi praktik baik yang berdampak pada mutu pembelajaran.</td>
+      </tr>
+      <tr>
+        <td style="border:1pt solid #000; padding:7pt; text-align:center; font-weight:bold;">7</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Mewujudkan tata kelola sekolah yang berintegritas, kolaboratif, transparan, efektif, dan berorientasi pada peningkatan mutu pendidikan.</td>
+        <td style="border:1pt solid #000; padding:7pt; text-align:justify;">Terlaksananya tata kelola yang sistematis, transparan, akuntabel, dan kolaboratif; sumber daya sekolah digunakan sesuai prioritas; serta terjadi perbaikan mutu secara berkelanjutan.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+function unduhWord() {
+  var css = '<style>' +
+    '@page WordSection1 { size: 21.0cm 29.7cm; mso-page-orientation: portrait; margin: 1.5cm 1.5cm 1.5cm 1.5cm; }' +
+    'div.WordSection1 { page: WordSection1; font-family: "Times New Roman", serif; }' +
+    '</style>';
+
+  var konten = '<html xmlns:o="urn:schemas-microsoft-com:office:office" ' +
+    'xmlns:w="urn:schemas-microsoft-com:office:word" ' +
+    'xmlns="http://www.w3.org/TR/REC-html40">' +
+    '<head><meta charset="utf-8"><title>Visi dan Misi SDN 1 Sukahaji</title>' + css + '</head>' +
+    '<body><div class="WordSection1">' + document.getElementById("AreaWord").innerHTML + '</div></body></html>';
+
+  var blob = new Blob(['\ufeff', konten], { type: 'application/msword' });
+  var url = URL.createObjectURL(blob);
+  var link = document.createElement('a');
+  link.href = url;
+  link.download = 'Visi_dan_Misi_SDN_1_SUKAHAJI_2026.doc';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
+
+</body>
+</html>
