@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portal Unggah Eviden Akreditasi 2026 - SDN 1 Sukahaji</title>
+<title>Portal Unggah Eviden Akreditasi 2026 (Sesuai Panduan BAN-PDM) - SDN 1 Sukahaji</title>
 <style>
   :root {
     --primary: #1e3a8a;
@@ -23,7 +23,6 @@
     padding: 20px;
     line-height: 1.5;
   }
-  /* HERO BANNER SEMANGAT JUANG */
   .hero {
     background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 55%, #1d4ed8 100%);
     color: white;
@@ -31,8 +30,6 @@
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(30, 58, 138, 0.25);
     margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
     border-bottom: 5px solid var(--accent);
   }
   .hero-badge {
@@ -48,19 +45,8 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-  .hero h1 {
-    margin: 0 0 8px 0;
-    font-size: 24px;
-    font-weight: 800;
-    letter-spacing: 0.3px;
-    color: #ffffff;
-  }
-  .hero h2 {
-    margin: 0 0 14px 0;
-    font-size: 16px;
-    font-weight: 600;
-    color: #93c5fd;
-  }
+  .hero h1 { margin: 0 0 8px 0; font-size: 24px; font-weight: 800; color: #ffffff; }
+  .hero h2 { margin: 0 0 14px 0; font-size: 16px; font-weight: 600; color: #93c5fd; }
   .hero-quote {
     background: rgba(255, 255, 255, 0.1);
     border-left: 4px solid var(--accent);
@@ -71,20 +57,9 @@
     color: #f8fafc;
     margin-bottom: 14px;
   }
-  .school-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    font-size: 13px;
-    color: #cbd5e1;
-  }
-  .school-meta span {
-    background: rgba(255,255,255,0.08);
-    padding: 5px 12px;
-    border-radius: 6px;
-  }
+  .school-meta { display: flex; flex-wrap: wrap; gap: 15px; font-size: 13px; color: #cbd5e1; }
+  .school-meta span { background: rgba(255,255,255,0.08); padding: 5px 12px; border-radius: 6px; }
 
-  /* CONTROL BAR & PROGRESS */
   .dashboard-bar {
     background: var(--card);
     padding: 18px 24px;
@@ -101,194 +76,72 @@
     z-index: 100;
     border: 1px solid #e2e8f0;
   }
-  .progress-wrap {
-    flex: 1;
-    min-width: 240px;
-  }
-  .progress-label {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: var(--primary);
-  }
-  .progress-track {
-    width: 100%;
-    height: 12px;
-    background: #e2e8f0;
-    border-radius: 999px;
-    overflow: hidden;
-  }
-  .progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #2563eb, #10b981);
-    width: 0%;
-    transition: width 0.3s ease;
-  }
-  .controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    align-items: center;
-  }
-  .search-input {
-    padding: 9px 14px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    font-size: 13.5px;
-    width: 220px;
-  }
+  .progress-wrap { flex: 1; min-width: 240px; }
+  .progress-label { display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; margin-bottom: 6px; color: var(--primary); }
+  .progress-track { width: 100%; height: 12px; background: #e2e8f0; border-radius: 999px; overflow: hidden; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, #2563eb, #10b981); width: 0%; transition: width 0.3s ease; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .search-input { padding: 9px 14px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 13.5px; width: 220px; }
   .filter-btn {
-    background: #f1f5f9;
-    color: #334155;
-    border: 1px solid #cbd5e1;
-    padding: 8px 13px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
+    background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; padding: 8px 13px;
+    border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s;
   }
-  .filter-btn.active, .filter-btn:hover {
-    background: var(--primary);
-    color: white;
-    border-color: var(--primary);
-  }
+  .filter-btn.active, .filter-btn:hover { background: var(--primary); color: white; border-color: var(--primary); }
   .btn-word {
-    background: #059669;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 8px;
-    font-size: 13.5px;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+    background: #059669; color: white; border: none; padding: 10px 18px; border-radius: 8px;
+    font-size: 13.5px; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 6px;
     box-shadow: 0 3px 8px rgba(5, 150, 105, 0.3);
   }
   .btn-word:hover { background: #047857; }
 
-  /* AUDIT BANNER */
   .audit-box {
-    background: #ecfdf5;
-    border: 1px solid #6ee7b7;
-    color: #065f46;
-    padding: 12px 18px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    font-size: 13.5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
+    background: #ecfdf5; border: 1px solid #6ee7b7; color: #065f46; padding: 12px 18px;
+    border-radius: 10px; margin-bottom: 20px; font-size: 13.5px; display: flex;
+    align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;
   }
 
-  /* TABLE DESIGN */
   .table-container {
-    background: var(--card);
-    padding: 24px;
-    border-radius: 14px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    overflow-x: auto;
+    background: var(--card); padding: 24px; border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); overflow-x: auto;
   }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13.5px;
-  }
-  th, td {
-    border: 1px solid #cbd5e1;
-    padding: 12px 14px;
-    vertical-align: top;
-    text-align: justify;
-  }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { border: 1px solid #cbd5e1; padding: 11px 13px; vertical-align: top; text-align: justify; }
   th {
-    background: #1e3a8a;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
+    background: #1e3a8a; color: white; text-align: center; font-weight: 700;
+    font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.4px;
   }
   .butir-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
-    background: #dbeafe;
-    color: #1e3a8a;
-    font-weight: 800;
-    font-size: 15px;
-    border-radius: 8px;
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 34px; height: 34px; background: #dbeafe; color: #1e3a8a;
+    font-weight: 800; font-size: 15px; border-radius: 8px;
   }
-  .indikator-cell {
-    background: #f8fafc;
-    font-weight: 700;
-    color: #0f172a;
-    text-align: left;
-  }
-  .bukti-cell {
-    text-align: left;
-    color: #334155;
-  }
-  .drive-cell {
-    text-align: center;
-    background: #fcfdff;
-  }
+  .indikator-cell { background: #f8fafc; font-weight: 700; color: #0f172a; text-align: left; }
+  .bukti-cell { text-align: left; color: #1e293b; line-height: 1.55; }
+  .bukti-cell b { color: #1e3a8a; }
+  .drive-cell { text-align: center; background: #fcfdff; }
   .btn-drive {
-    display: inline-block;
-    background: #2563eb;
-    color: #ffffff !important;
-    text-decoration: none;
-    padding: 8px 14px;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 12.5px;
-    transition: all 0.2s;
-    box-shadow: 0 2px 5px rgba(37, 99, 235, 0.25);
-    margin-bottom: 6px;
+    display: inline-block; background: #2563eb; color: #ffffff !important;
+    text-decoration: none; padding: 8px 14px; border-radius: 8px;
+    font-weight: 700; font-size: 12.5px; transition: all 0.2s;
+    box-shadow: 0 2px 5px rgba(37, 99, 235, 0.25); margin-bottom: 6px;
   }
-  .btn-drive:hover {
-    background: #1d4ed8;
-    transform: translateY(-1px);
-  }
+  .btn-drive:hover { background: #1d4ed8; transform: translateY(-1px); }
   .check-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    font-size: 12px;
-    color: #475569;
-    cursor: pointer;
-    margin-top: 6px;
-    user-select: none;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    font-size: 12px; color: #475569; cursor: pointer; margin-top: 6px; user-select: none;
   }
-  .check-label input {
-    width: 16px;
-    height: 16px;
-    accent-color: var(--success);
-    cursor: pointer;
-  }
-  tr.done-row td.indikator-cell,
-  tr.done-row td.bukti-cell,
-  tr.done-row td.drive-cell {
+  .check-label input { width: 16px; height: 16px; accent-color: var(--success); cursor: pointer; }
+  tr.done-row td.indikator-cell, tr.done-row td.bukti-cell, tr.done-row td.drive-cell {
     background-color: #f0fdf4 !important;
   }
 </style>
 </head>
 <body>
 
-<!-- BANNER SEMANGAT JUANG -->
 <div class="hero">
   <div class="hero-badge">🔥 GERAKAN SUKSES AKREDITASI 2026 — KOMBEL SAHAKARYA</div>
   <h1>SATU TEKAD, SATU LANGKAH, MENUJU SDN 1 SUKAHAJI UNGGUL &amp; BERPRESTASI!</h1>
-  <h2>Portal Kolaborasi Unggah Eviden &amp; Pemetaan Instrumen Akreditasi Satuan Pendidikan Tahun 2026</h2>
+  <h2>Portal Kolaborasi Unggah Eviden &amp; Pemetaan Instrumen Akreditasi Satuan Pendidikan Tahun 2026 (Sesuai Panduan BAN-PDM Versi 2025)</h2>
   <div class="hero-quote">
     "Setiap dokumen dan karya yang Bapak/Ibu unggah hari ini adalah jejak pengabdian mulia demi masa depan 98 putra-putri terbaik SDN 1 Sukahaji. Mari bergerak bersama dalam semangat <b>Silih Asih, Silih Asah, Silih Asuh</b> — Kerja Tuntas, Bukti Berkualitas, Akreditasi Unggul!"
   </div>
@@ -300,17 +153,12 @@
   </div>
 </div>
 
-<!-- AUDIT VERIFIKASI BANNER -->
 <div class="audit-box">
   <div>
-    ✅ <b>Status Verifikasi Link Google Drive:</b> Seluruh <b>45 Sub-Indikator (Butir 1 s.d. 14)</b> telah diperiksa. <b>100% Lengkap (45 Link Aktif)</b> dan <b>Tidak Ada Link Ganda/Duplikat</b>.
-  </div>
-  <div style="font-size:12.5px;">
-    💡 <i>Tips: Klik tombol biru <b>"📂 Unggah Eviden"</b> pada setiap indikator untuk langsung membuka folder Google Drive tujuan.</i>
+    ✅ <b>Telah Diselaraskan dengan Panduan IA2024 Versi 2025 (Kepmendikbudristek No. 246/O/2024):</b> Seluruh daftar bukti kinerja telah dijabarkan secara operasional (memenuhi kriteria rubrik <b>SANGAT BAIK</b>) dengan <b>45 Link Folder Google Drive Unik &amp; Aktif</b>.
   </div>
 </div>
 
-<!-- STICKY DASHBOARD BAR -->
 <div class="dashboard-bar">
   <div class="progress-wrap">
     <div class="progress-label">
@@ -332,7 +180,6 @@
   </div>
 </div>
 
-<!-- AREA DOKUMEN UTAMA -->
 <div class="table-container" id="AreaDokumen">
   <div style="text-align:center; font-family:'Times New Roman', serif; margin-bottom:15px;">
     <h2 style="margin:0; font-size:15pt; color:#1e3a8a;">MATRIKS PEMETAAN INDIKATOR, DESKRIPSI KINERJA ASESI, DAN PORTAL EVIDEN AKREDITASI</h2>
@@ -345,10 +192,10 @@
     <thead>
       <tr>
         <th style="width:4%;">Butir</th>
-        <th style="width:15%;">Pernyataan</th>
-        <th style="width:32%;">Deskripsi Kinerja Asesi (Maksimal 1.000 Karakter)</th>
-        <th style="width:17%;">Indikator</th>
-        <th style="width:20%;">Identifikasi Bukti Kinerja Lain (Terpetakan per Indikator)</th>
+        <th style="width:14%;">Pernyataan</th>
+        <th style="width:30%;">Deskripsi Kinerja Asesi (Maksimal 1.000 Karakter)</th>
+        <th style="width:16%;">Indikator</th>
+        <th style="width:24%;">Identifikasi Bukti Kinerja Lain (Terpetakan per Indikator)</th>
         <th style="width:12%;">Portal Folder Drive</th>
       </tr>
     </thead>
@@ -359,7 +206,10 @@
         <td rowspan="4">Pendidik menyediakan dukungan sosial emosional bagi peserta didik dalam proses pembelajaran.</td>
         <td rowspan="4">Pendidik SDN 1 Sukahaji (9 guru melayani 98 murid pada 6 rombel) menyediakan dukungan sosial emosional melalui pendekatan Pembelajaran Mendalam (Deep Learning) yang mindful, meaningful, dan joyful. Setiap pagi (07.00–07.15 WIB), guru melaksanakan penyambutan 5S dan Embun Pagi untuk mengenali kesiapan emosi murid. Pada Rapor Pendidikan, indikator Dukungan Psikologis mencapai kategori Baik (skor 77,45; naik 14,32 poin) dan Wellbeing Murid mencapai 76,81. Guru melakukan asesmen diagnostik awal untuk memetakan kebutuhan murid, membangun interaksi setara, serta memberi umpan balik positif yang menumbuhkan pola pikir bertumbuh (growth mindset). Murid yang mengalami kendala belajar/emosi diberi pendampingan individual, diferensiasi tugas, dan dikomunikasikan kepada orang tua melalui buku penghubung/grup WhatsApp. Keterampilan sosial emosional dikembangkan melalui kerja kelompok, tutor sebaya, refleksi, dan budaya Sunda (silih asih, silih asah, silih asuh).</td>
         <td class="indikator-cell">1.1. Interaksi yang setara dan saling menghargai</td>
-        <td class="bukti-cell">• Dokumentasi foto/video Penyambutan Pagi 5S &amp; <i>Salam/Embun Pagi</i>.<br>• Modul Ajar/RPP yang memuat kegiatan diskusi setara dan saling menghargai pendapat.</td>
+        <td class="bukti-cell">
+          • <b>Modul Ajar/RPP Kelas I–VI:</b> Memuat daftar pertanyaan pemantik terbuka untuk memicu dialog bermakna (bukan sekadar tanya-jawab satu arah).<br>
+          • <b>Dokumentasi Foto/Video Pembelajaran &amp; Embun Pagi:</b> Menunjukkan interaksi hangat (5S), guru mendengarkan saksama, menggunakan kalimat mengayomi tanpa label negatif, serta memberi kesempatan $\ge 3$ murid bertanya/berpendapat.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/12zO6WtrVvcjdmKTvVQUN1G1UKBfcpv20?usp=drive_link" target="_blank">📂 Unggah Eviden 1.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '1.1')"> Sudah Unggah</label>
@@ -367,7 +217,10 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">1.2. Interaksi yang membangun pola pikir bertumbuh</td>
-        <td class="bukti-cell">• Modul Ajar/RPP bermuatan kegiatan <i>mindfulness</i>, pemberian apresiasi/umpan balik positif, &amp; lembar refleksi kemajuan belajar murid.</td>
+        <td class="bukti-cell">
+          • <b>Sampel Hasil Karya / Lembar Tugas Murid (LKPD):</b> Terdapat tulisan <b>umpan balik konstruktif guru yang spesifik mengapresiasi proses dan usaha (<i>effort</i>) murid</b> (bukan hanya angka/nilai akhir), disertai alasan mengapa usaha tersebut pantas diapresiasi.<br>
+          • <b>Modul Ajar &amp; Lembar Refleksi Kemajuan Murid:</b> Memuat strategi motivasi agar murid yakin bahwa kemampuannya dapat terus berkembang melalui usaha yang tepat.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1_vMxS1TI1uu-CnWTYc78_f941ZgyE9BT?usp=drive_link" target="_blank">📂 Unggah Eviden 1.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '1.2')"> Sudah Unggah</label>
@@ -375,7 +228,11 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">1.3. Memberi perhatian dan bantuan pada murid yang membutuhkan dukungan lebih/ekstra</td>
-        <td class="bukti-cell">• Dokumen KSP 2026/2027 (Program Inklusif) &amp; Rekap Hasil Asesmen Diagnostik Kelas I–VI.<br>• Jurnal Harian Guru / Catatan Anekdotal pendampingan individual &amp; Buku Penghubung Orang Tua / Grup WA.</td>
+        <td class="bukti-cell">
+          • <b>Instrumen &amp; Rekap Pemetaan Asesmen Diagnostik Awal Kelas I–VI:</b> Bukti sistematis identifikasi murid berkebutuhan khusus maupun murid yang butuh dukungan ekstra.<br>
+          • <b>Modul Ajar Berdiferensiasi &amp; Program Remedial/Pengayaan:</b> Bukti penyesuaian instruksi/asesmen (misal: tes tertulis diubah menjadi unjuk kerja/lisan) &amp; Jurnal Pendampingan Individual.<br>
+          • <b>Buku Penghubung / Notulen Konsultasi Orang Tua:</b> Bukti pelibatan murid dan orang tua dalam menyusun rencana pendampingan ekstra di sekolah dan di rumah.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1Vw5CxsB-9F61ISfgPrqlJmr8I6VISofj?usp=drive_link" target="_blank">📂 Unggah Eviden 1.3</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '1.3')"> Sudah Unggah</label>
@@ -383,7 +240,10 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">1.4. Strategi pengajaran yang membangun keterampilan sosial emosional pada murid</td>
-        <td class="bukti-cell">• Modul Ajar/RPP kerja kelompok, bermain peran, &amp; tutor sebaya.<br>• Dokumentasi pembiasaan budaya Sunda (<i>silih asih, silih asah, silih asuh</i>) &amp; refleksi perasaan.</td>
+        <td class="bukti-cell">
+          • <b>Modul Ajar/RPP Bermuatan Keterampilan Sosial-Emosional (KSE):</b> Memuat langkah terencana untuk membantu murid mengelola emosi (bosan/frustrasi/cemas) saat menghadapi materi sulit (teknik <i>mindfulness</i>/STOP, tahapan persiapan kerja kelompok, &amp; tutor sebaya).<br>
+          • <b>Jurnal Anekdotal &amp; Dokumentasi Refleksi Perasaan Murid:</b> Bukti guru memvalidasi perasaan murid, mencari akar masalah emosi, dan melatih kemandirian serta budaya <i>silih asih, silih asah, silih asuh</i>.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1bPmypjy4mU03541xFxUWBOEmHbck_C9m?usp=drive_link" target="_blank">📂 Unggah Eviden 1.4</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '1.4')"> Sudah Unggah</label>
@@ -396,7 +256,11 @@
         <td rowspan="3">Pendidik mengelola kelas untuk menciptakan suasana belajar yang aman, nyaman, dan mendukung tercapainya tujuan pembelajaran.</td>
         <td rowspan="3">Pendidik SDN 1 Sukahaji mengelola 6 ruang kelas (Kelas I–VI) secara terencana dan kondusif. Pada Rapor Pendidikan, indikator Manajemen Kelas mencapai kategori Baik (skor 73,59; naik 12,53 poin) dan murid aman dari hukuman fisik mencapai 90,91%. Di awal tahun ajaran, setiap wali kelas bersama murid menyusun Kesepakatan Kelas secara demokratis (saling menghargai, menjaga kebersihan, tertib menyimak, dan bertanggung jawab), dipasang di papan pajang kelas, serta dievaluasi berkala. Disiplin diterapkan melalui pendekatan disiplin positif, keteladanan, dialog reflektif/restitusi, dan konsekuensi logis tanpa kekerasan. Guru menata meja-kursi secara fleksibel sesuai kegiatan, menyampaikan tujuan belajar, memanfaatkan media interaktif (Chromebook, IFP, TV Digital, alat peraga), serta mengelola waktu (1 JP = 35 menit) secara efektif sehingga suasana belajar aman, tertib, dan optimal.</td>
         <td class="indikator-cell">2.1. Kesepakatan kelas yang disusun secara partisipatif</td>
-        <td class="bukti-cell">• Dokumen Kesepakatan Kelas I–VI yang ditandatangani murid dan wali kelas (terpasang di Papan Pajang kelas).<br>• Dokumentasi foto diskusi penyusunan kesepakatan kelas.</td>
+        <td class="bukti-cell">
+          • <b>Poster/Dokumen Kesepakatan Kelas I–VI:</b> Ditandatangani oleh seluruh murid dan wali kelas serta terpajang jelas di Papan Pajang tiap ruang kelas.<br>
+          • <b>Notulen/Catatan &amp; Foto Proses Musyawarah Kelas:</b> Bukti keterlibatan aktif murid saat mengusulkan ide aturan kelas.<br>
+          • <b>Jurnal Kelas:</b> Catatan penggunaan kesepakatan kelas sebagai acuan refleksi perilaku sehari-hari.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1N7Jm14ks74PpnEo1x1i1YTlGbhYyf-7q?usp=drive_link" target="_blank">📂 Unggah Eviden 2.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '2.1')"> Sudah Unggah</label>
@@ -404,7 +268,10 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">2.2. Penegakan disiplin dengan pendekatan positif</td>
-        <td class="bukti-cell">• Jurnal Pengelolaan Kelas &amp; Catatan Penerapan Disiplin Positif (Dialog Reflektif/Restitusi tanpa hukuman fisik).</td>
+        <td class="bukti-cell">
+          • <b>Jurnal Penerapan Disiplin Positif / Segitiga Restitusi Kelas I–VI:</b> Catatan penyelesaian pelanggaran aturan atau konflik murid melalui dialog reflektif (menyadarkan dampak negatif perilaku &amp; konsekuensi logis yang relevan), tanpa ancaman dan tanpa hukuman fisik.<br>
+          • <b>Dokumentasi Foto Dialog Pembinaan Siswa:</b> Menunjukkan komunikasi guru yang tenang, sopan, dan menghargai martabat murid.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1tY76_bGmTT7jCOunuTFEgiTqLCH8cmXZ?usp=drive_link" target="_blank">📂 Unggah Eviden 2.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '2.2')"> Sudah Unggah</label>
@@ -412,7 +279,10 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">2.3. Waktu di kelas terfokus pada kegiatan belajar</td>
-        <td class="bukti-cell">• Modul Ajar/RPP (memuat pengaturan waktu 1 JP = 35 menit &amp; media interaktif).<br>• Instrumen &amp; Laporan Hasil Observasi Kelas / Supervisi Akademik.<br>• Dokumentasi foto penataan ruang kelas &amp; suasana belajar kondusif.</td>
+        <td class="bukti-cell">
+          • <b>Modul Ajar/RPP Pembelajaran Aktif:</b> Memuat rincian alokasi waktu (<i>time on task</i> 1 JP = 35 menit), variasi strategi (diskusi kelompok/pasangan/proyek/inkuiri), dan penggunaan media interaktif untuk menjaga fokus murid.<br>
+          • <b>Instrumen Observasi Kelas &amp; Foto Suasana Belajar:</b> Menunjukkan penataan meja-kursi yang kondusif dan seluruh murid terlibat aktif belajar tanpa distraksi.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1xpiSY2SAsPgBArJujbIALE9AeyhAf6mp?usp=drive_link" target="_blank">📂 Unggah Eviden 2.3</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '2.3')"> Sudah Unggah</label>
@@ -425,7 +295,10 @@
         <td rowspan="5">Pendidik mengelola proses pembelajaran secara efektif dan bermakna.</td>
         <td rowspan="5">Pendidik SDN 1 Sukahaji merancang dan melaksanakan pembelajaran mengacu pada CP, ATP, dan Modul Ajar/RPP berbasis Pembelajaran Mendalam (Deep Learning). Capaian Kualitas Pembelajaran di Rapor Pendidikan berkategori Baik (skor 73,09; naik 12,09 poin) dan Metode Pembelajaran mencapai 68,23. Menindaklanjuti RKT 2026 untuk penguatan literasi tingkat lanjut (L3 &amp; teks sastra) serta numerasi (Aljabar, Data, &amp; L3), guru menerapkan model PBL, PjBL, dan Inquiry berorientasi HOTS. Materi dikaitkan dengan potensi Desa Sukahaji (pertanian, sosial-ekonomi, budaya Sunda) sebagai sumber belajar kontekstual, dipadukan pemanfaatan Chromebook, IFP, TV Digital, serta mapel pilihan Koding dan Kecerdasan Artifisial (KKA) di Kelas V–VI. Asesmen diagnostik, formatif, dan sumatif dilakukan secara autentik; hasilnya dianalisis untuk remedial, pengayaan, dan perbaikan proses belajar, serta dilaporkan melalui e-Rapor.</td>
         <td class="indikator-cell">3.1. Perencanaan yang memadai untuk mendukung pelaksanaan pembelajaran</td>
-        <td class="bukti-cell">• Dokumen CP, ATP, &amp; Modul Ajar/RPP Kelas I–VI berbasis <i>Deep Learning</i>.<br>• Jadwal Pelajaran Kurikulum Merdeka Tahun Ajaran 2026/2027.</td>
+        <td class="bukti-cell">
+          • <b>Dokumen Modul Ajar / RPP Kelas I–VI:</b> Memuat lengkap 3 elemen esensial (Tujuan Pembelajaran, Kegiatan Pembelajaran, dan Teknik Asesmen), disusun berdasarkan <b>Silabus/ATP KSP 2026/2027</b> serta hasil pemetaan profil/kebutuhan belajar murid.<br>
+          • <b>Bahan Ajar / Media Pembelajaran &amp; Dokumentasi Penyampaian Tujuan Belajar:</b> Bukti kesiapan materi guru dan penyampaian tujuan pembelajaran kepada murid di awal kelas.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1NMJlV6GIt6hB3enCM0tSvM5OyhtjLKrE?usp=drive_link" target="_blank">📂 Unggah Eviden 3.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '3.1')"> Sudah Unggah</label>
@@ -433,7 +306,10 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">3.2. Penilaian formatif digunakan sebagai umpan balik dalam proses pembelajaran</td>
-        <td class="bukti-cell">• LKPD (cetak &amp; interaktif), Instrumen/Kuis Asesmen Formatif, Catatan Observasi, &amp; Bukti Umpan Balik Guru untuk perbaikan belajar.</td>
+        <td class="bukti-cell">
+          • <b>Instrumen &amp; Rekap Asesmen Formatif Berkala:</b> Bukti pelaksanaan penilaian formatif lebih dari 1 kali dalam satu periode belajar (kuis awal/tengah pembelajaran, lembar observasi, LKPD).<br>
+          • <b>Catatan Tindak Lanjut Perbaikan Pembelajaran &amp; Sampel LKPD Berumpan Balik:</b> Bukti pemanfaatan hasil formatif oleh guru untuk menyesuaikan strategi mengajar berikutnya serta penyampaian umpan balik cepat dan informatif kepada murid.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1YWdIw1XtQkZNk_9JgPbb4B1z_wrd0AxT?usp=drive_link" target="_blank">📂 Unggah Eviden 3.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '3.2')"> Sudah Unggah</label>
@@ -441,7 +317,10 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">3.3. Penilaian sumatif dilakukan dengan metode yang beragam menggunakan instrumen yang sesuai dengan tujuan pembelajaran</td>
-        <td class="bukti-cell">• Kisi-kisi, Instrumen, &amp; Rubrik Asesmen Sumatif yang beragam (Tes Tertulis, Lisan, Praktik, Proyek, dan Portofolio).</td>
+        <td class="bukti-cell">
+          • <b>Kisi-kisi, Instrumen, &amp; Rubrik Penilaian Sumatif Kelas I–VI:</b> Memadukan <b>dua atau lebih metode</b> yang sesuai tujuan belajar, termasuk <b>asesmen autentik</b> (unjuk kerja/praktik, proyek, produk, portofolio — tidak hanya tes tertulis pilihan ganda) dan dilaksanakan lebih dari satu kali (sumatif lingkup materi &amp; akhir semester).<br>
+          • <b>Rekap Hasil Asesmen Sumatif (Angka &amp; Deskripsi Kualitatif):</b> Memuat informasi capaian kompetensi yang sudah dikuasai dan yang masih perlu pendampingan.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1WyZ78-srx1XPxAt6YiPH8bONtA-gaVGl?usp=drive_link" target="_blank">📂 Unggah Eviden 3.3</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '3.3')"> Sudah Unggah</label>
@@ -449,7 +328,10 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">3.4. Hasil penilaian dilaporkan secara informatif untuk mendorong tindak lanjut perbaikan</td>
-        <td class="bukti-cell">• Dokumen Analisis Nilai Hasil Belajar, Program Pelaksanaan Remedial &amp; Pengayaan, serta Cetakan Laporan Hasil Belajar (e-Rapor).</td>
+        <td class="bukti-cell">
+          • <b>Dokumen Pengolahan Nilai (Gabungan Formatif &amp; Sumatif) serta Cetakan e-Rapor:</b> Memuat deskripsi kualitatif ekstensif tentang capaian yang sudah dikuasai, yang belum dikuasai, serta rekomendasi pendampingan bagi orang tua.<br>
+          • <b>Lembar Refleksi Diri Murid &amp; Dokumentasi Penerimaan Rapor Dialogis:</b> Daftar hadir, foto konsultasi dua arah antara wali kelas dan orang tua, serta lembar rencana tindak lanjut belajar murid.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1VmSBrABLa0iOsHhexT4WIk9FINhNLjuc?usp=drive_link" target="_blank">📂 Unggah Eviden 3.4</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '3.4')"> Sudah Unggah</label>
@@ -457,7 +339,10 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">3.5. Praktik pengajaran yang memfasilitasi murid untuk menganalisis, mengutarakan gagasan, dan menghubungkan pengetahuannya dengan pengetahuan baru dan konteks aplikatif</td>
-        <td class="bukti-cell">• Modul Ajar berbasis PBL/PjBL/Inquiry &amp; HOTS yang dikaitkan dengan lingkungan Desa Sukahaji.<br>• Dokumentasi pemanfaatan Chromebook, IFP, Mapel Pilihan Koding-KA (Kelas V–VI), &amp; pembelajaran luar kelas.</td>
+        <td class="bukti-cell">
+          • <b>Modul Ajar, LKPD, &amp; Instrumen Penilaian Berorientasi HOTS (Bukan Hafalan):</b> Dirancang mendorong penalaran analitis dan mengaitkan materi lama dengan materi baru serta fenomena nyata di lingkungan Desa Sukahaji.<br>
+          • <b>Lembar Refleksi Proses &amp; Hasil Belajar Murid serta Dokumentasi Pembelajaran:</b> Foto/video diskusi interaktif, praktik Chromebook/IFP, Koding-KA (Kelas V–VI), dan observasi lingkungan sekitar.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1d8gkpbM8U4yKM5fVjxfOkgcW5YDPqUuH?usp=drive_link" target="_blank">📂 Unggah Eviden 3.5</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '3.5')"> Sudah Unggah</label>
@@ -470,7 +355,10 @@
         <td rowspan="4">Pendidik memfasilitasi pembelajaran yang efektif dalam membangun keimanan, ketakwaan, komitmen kebangsaan, kemampuan bernalar dan memecahkan masalah, serta karakter dan kompetensi lainnya yang relevan bagi peserta didik.</td>
         <td rowspan="4">Pendidik SDN 1 Sukahaji memfasilitasi penguatan 8 Dimensi Profil Lulusan selaras dengan visi sekolah. Capaian Karakter di Rapor Pendidikan berkategori Baik (skor 65,91; naik 4,91 poin) dengan kekuatan pada Gotong Royong (72,17), Beriman &amp; Berakhlak Mulia (71,50), Kemandirian (68,44), dan Kebinekaan Global (67,07). Nilai religius dibiasakan melalui One Day One Surah, baca Yasin, Salat Dhuha berjamaah, Pengajian Bulanan, Bakti Sosial Ramadhan, PHBI, serta ekskul BTQ dan Kaligrafi. Komitmen kebangsaan dan budaya lokal dibangun melalui upacara, lagu nasional/daerah, Mulok Bahasa Sunda, dan kaulinan barudak. Untuk meningkatkan Kreativitas (53,50) dan Nalar Kritis (51,58) sesuai RKT 2026, dilaksanakan kokurikuler "Projek Anak Hebat" berbasis PjBL yang menginternalisasi 7 Kebiasaan Anak Indonesia Hebat (6–7 JP/minggu), Pameran Kelas, Gerakan Pungut Sampah (GPS), Literasi Pagi, Pramuka, serta ekskul olahraga dan seni.</td>
         <td class="indikator-cell">4.1. Pembelajaran yang efektif menguatkan keimanan dan ketakwaan murid pada Tuhan YME untuk membentuk akhlak yang mulia</td>
-        <td class="bukti-cell">• Program &amp; Jurnal Pembiasaan Keagamaan (<i>One Day One Surah</i>, Baca Yasin, Salat Dhuha Berjamaah, Pengajian Bulanan, Bakti Sosial Ramadhan, PHBI).<br>• Program &amp; Jurnal Ekstrakurikuler BTQ dan Seni Kaligrafi.</td>
+        <td class="bukti-cell">
+          • <b>Modul Ajar PAI &amp; Mapel Umum Terintegrasi Nilai Akhlak:</b> Memuat analisis studi kasus kontekstual (tidak sekadar menghafal), diskusi makna ajaran agama, serta lembar refleksi penerapan akhlak mulia dalam keseharian.<br>
+          • <b>Program, Jurnal, &amp; Dokumentasi Pembiasaan Keagamaan dan Ekskul:</b> Bukti konsistensi budaya sekolah (<i>One Day One Surah</i>, Salat Dhuha berjamaah, Baca Yasin, Pengajian Bulanan, Bakti Sosial, PHBI, serta Ekskul BTQ &amp; Kaligrafi).
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1bBZkrE9gDwA1D5Tjmk2GR2NB6CaEGAGu?usp=drive_link" target="_blank">📂 Unggah Eviden 4.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '4.1')"> Sudah Unggah</label>
@@ -478,7 +366,10 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">4.2. Pembelajaran yang efektif dalam menguatkan kecintaan terhadap sejarah, kekayaan budaya, alam Indonesia, pemikiran, dan karya anak bangsa</td>
-        <td class="bukti-cell">• Modul Ajar Pendidikan Pancasila, IPAS, &amp; Mulok Bahasa Sunda.<br>• Jurnal &amp; Dokumentasi Upacara Bendera, menyanyikan Lagu Nasional/Daerah, PHBN, serta <i>kaulinan barudak</i> / budaya lokal Ciamis.</td>
+        <td class="bukti-cell">
+          • <b>Modul Ajar Intrakurikuler (Pendidikan Pancasila, IPAS, Seni, Mulok Bahasa Sunda):</b> Menerapkan pembelajaran mendalam (diskusi/studi kasus/kunjungan lapangan) tentang sejarah, alam, dan budaya lokal Ciamis disertai catatan refleksi perbaikan guru.<br>
+          • <b>Modul Kokurikuler Bertema Budaya/Kebangsaan yang Terhubung dengan Intrakurikuler:</b> Bukti keterkaitan proyek kokurikuler (kaulinan barudak/pameran budaya/upacara/PHBN) dengan materi pelajaran kelas serta lembar refleksi &amp; evaluasi yang melibatkan murid.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1-hYhfEbCCN_lAxAdOe7nYeIXepz2mKIM?usp=drive_link" target="_blank">📂 Unggah Eviden 4.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '4.2')"> Sudah Unggah</label>
@@ -486,7 +377,10 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">4.3. Pembelajaran yang efektif dalam memfasilitasi murid untuk mengembangkan kemampuan bernalar dan memecahkan masalah</td>
-        <td class="bukti-cell">• Modul Kokurikuler <i>"Projek Anak Hebat"</i> berbasis PjBL.<br>• LKPD pemecahan masalah kontekstual &amp; Dokumentasi Pameran Kelas / Gelar Karya proyek siswa.</td>
+        <td class="bukti-cell">
+          • <b>Modul Ajar Semua Mapel Relevan &amp; Modul Kokurikuler <i>"Projek Anak Hebat"</i> (PjBL/Studi Kasus):</b> Mengangkat isu nyata di sekitar Desa Sukahaji sesuai jenjang usia murid.<br>
+          • <b>Lembar Kerja Perencanaan Proyek, Produk Solusi, &amp; Refleksi Murid:</b> Bukti autentik bahwa <b>murid dilibatkan secara aktif dalam merencanakan kegiatan, menentukan proses/produk akhir solusi, serta melakukan refleksi dan evaluasi</b> (bukan ditentukan sepihak oleh guru).
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1V_X4UAO5WWG2vWnXq2Pt6OoajsSYLBV7?usp=drive_link" target="_blank">📂 Unggah Eviden 4.3</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '4.3')"> Sudah Unggah</label>
@@ -494,7 +388,10 @@
       </tr>
       <tr data-komponen="pendidik">
         <td class="indikator-cell">4.4. Pembelajaran yang efektif dalam membangun kompetensi dan/atau karakter yang menjadi misi utama satuan pendidikan</td>
-        <td class="bukti-cell">• Dokumen KSP 2026/2027 (Bab III: 8 Dimensi Profil Lulusan) &amp; Jurnal Pemantauan <b>7 Kebiasaan Anak Indonesia Hebat</b>.<br>• Jurnal Pembiasaan <i>Gerakan Pungut Sampah (GPS)</i> &amp; <i>Literasi Pagi</i>.<br>• SK, Program Kerja, &amp; Jurnal Ekstrakurikuler (Pramuka, Olahraga, Seni).</td>
+        <td class="bukti-cell">
+          • <b>Dokumen KSP 2026/2027 &amp; Matriks Kesinambungan Karakter Misi Utama Sekolah:</b> Menunjukkan benang merah yang jelas antara 8 Dimensi Profil Lulusan (visi-misi) dengan kegiatan Intrakurikuler, Kokurikuler (<i>7 Kebiasaan Anak Indonesia Hebat</i>), dan Ekstrakurikuler.<br>
+          • <b>Modul Ajar, Jurnal Pembiasaan (GPS &amp; Literasi Pagi), serta Jurnal/Foto Ekstrakurikuler (Pramuka, Olahraga, Seni, BTQ):</b> Bukti pembangunan karakter yang rutin dan sistematis.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1Xv_Y_hNRG4ZvCEOBQqOQQf9y393T5Y3Y?usp=drive_link" target="_blank">📂 Unggah Eviden 4.4</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '4.4')"> Sudah Unggah</label>
@@ -507,7 +404,10 @@
         <td rowspan="4">Kepala satuan pendidikan menerapkan budaya refleksi untuk perbaikan pembelajaran yang berpusat pada peserta didik, serta evaluasi kinerja untuk rencana pengembangan profesional bagi pendidik dan tenaga kependidikan.</td>
         <td rowspan="4">Kepala SDN 1 Sukahaji (Ibu Iis Gustini Ratna Nengsih, S.Pd.SD.) memimpin budaya refleksi dan pengembangan profesional bagi 9 guru dan 1 tendik. Pada Rapor Pendidikan, indikator Refleksi dan Perbaikan Pembelajaran berkategori Baik (skor 70,13; naik 9,97 poin), Refleksi Praktik Mengajar (73,92), Praktik Inovatif (69,67), dan Dukungan Refleksi Guru (73,72). Menindaklanjuti indikator Pengalaman Pelatihan PTK (C.3) pada RKT 2026, Kepala Sekolah mengoptimalkan kegiatan rutin mingguan Komunitas Belajar (Kombel) "Sahakarya" (terkoordinasi pada Fase A, B, dan C) serta KKG untuk refleksi hasil asesmen, bedah modul Deep Learning, dan berbagi praktik baik TIK. Kepala Sekolah melaksanakan supervisi akademik bulanan disertai dialog tindak lanjut, mentoring guru, serta IHT/workshop berkala bersama Pengawas Bina. Pengembangan kompetensi melalui Ruang GTK/PMM dan pelatihan didukung anggaran RKT-RKAS 2026 serta pemberian penghargaan objektif.</td>
         <td class="indikator-cell">5.1. Fasilitasi kepada guru dan tenaga kependidikan untuk melakukan refleksi kinerja dalam rangka perbaikan pembelajaran</td>
-        <td class="bukti-cell">• SK, Program Kerja, Jadwal, Daftar Hadir, Notulen, &amp; Laporan Kegiatan Rutin Mingguan <b>Komunitas Belajar (Kombel) Sahakarya</b> (Fase A, B, C).<br>• Jurnal Refleksi Pembelajaran Guru (Harian, Per Unit, &amp; Per Semester).</td>
+        <td class="bukti-cell">
+          • <b>SOP / Prosedur Pelaksanaan Refleksi Kinerja Guru:</b> Panduan resmi sekolah yang mengatur pelaksanaan refleksi kinerja secara sistematis (minimal 6 bulan sekali dalam 2 tahun terakhir: 2025 &amp; 2026) serta Notulen/Daftar Hadir Kombel <i>"Sahakarya"</i>.<br>
+          • <b>Jurnal Refleksi Guru, Rekap Umpan Balik Murid, &amp; Bukti Perubahan Modul Ajar (<i>Before-After</i>):</b> Bukti spesifik bagaimana hasil refleksi dan umpan balik murid digunakan untuk memperbaiki rancangan instruksi pada materi berikutnya.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1Lib2M89Rby1_zW1J1ZwI0l7wCw-1vPu7?usp=drive_link" target="_blank">📂 Unggah Eviden 5.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '5.1')"> Sudah Unggah</label>
@@ -515,7 +415,10 @@
       </tr>
       <tr data-komponen="kepsek">
         <td class="indikator-cell">5.2. Evaluasi kinerja dilakukan oleh kepsek kepada guru dan tendik dalam rangka meningkatkan kualitas pembelajaran yang dilakukan secara berkala dan sistematis</td>
-        <td class="bukti-cell">• Program, Jadwal, Instrumen, &amp; Laporan Hasil <b>Supervisi Akademik</b> Kepala Sekolah (bulanan/semester) beserta Catatan Dialog Tindak Lanjut.<br>• Dokumen Evaluasi/Pengelolaan Kinerja Guru &amp; Tendik (Ruang GTK/PMM).</td>
+        <td class="bukti-cell">
+          • <b>SOP, Jadwal (di Kalender Akademik), &amp; Instrumen Evaluasi Kinerja/Supervisi Akademik (2 Tahun Terakhir: 2025 &amp; 2026):</b> Bukti pelaksanaan evaluasi kinerja secara rutin minimal 6 bulan sekali.<br>
+          • <b>Laporan Hasil Supervisi, Berita Acara Dialog Umpan Balik Individual, &amp; Dokumen Pengelolaan Kinerja (Ruang GTK):</b> Memuat rencana tindak lanjut peningkatan kualitas pembelajaran dan dampaknya pada capaian murid.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1rp3FSglFL8yjYsp3uJJ_YFPpEXJyQUj-?usp=drive_link" target="_blank">📂 Unggah Eviden 5.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '5.2')"> Sudah Unggah</label>
@@ -523,7 +426,10 @@
       </tr>
       <tr data-komponen="kepsek">
         <td class="indikator-cell">5.3. Program pengembangan profesional guru untuk peningkatan kualitas pembelajaran telah dilakukan</td>
-        <td class="bukti-cell">• RKT &amp; RKAS 2026 (Program Benahi No. 1, 2, &amp; 3 peningkatan kompetensi GTK).<br>• Laporan Pelaksanaan IHT/Workshop/KKG, Program Mentoring Guru, &amp; Kumpulan Sertifikat Pelatihan Guru (PMM/Non-PMM).</td>
+        <td class="bukti-cell">
+          • <b>Dokumen Pemetaan Kebutuhan Belajar Guru &amp; Program Pengembangan Keprofesian (RKT-RKAS 2026):</b> Menunjukkan bahwa topik pelatihan (HOTS, Numerasi, Koding-KA, Kebinekaan) disusun berdasarkan hasil refleksi (5.1) dan evaluasi kinerja/supervisi (5.2).<br>
+          • <b>Laporan Pelaksanaan IHT/Workshop/Mentoring/Kombel Sahakarya, Sertifikat Pelatihan (1 Tahun Terakhir), &amp; Dokumentasi Penerapan Hasil Pelatihan di Kelas.</b>
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1QLGM-_3YMz5X5aXajdlUEVchNPi1oWQa?usp=drive_link" target="_blank">📂 Unggah Eviden 5.3</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '5.3')"> Sudah Unggah</label>
@@ -531,7 +437,11 @@
       </tr>
       <tr data-komponen="kepsek">
         <td class="indikator-cell">5.4. Pengelolaan guru dan tenaga kependidikan yang efektif dan akuntabel dalam hal pemberian kompensasi, penghargaan atau sanksi berbasis kinerja</td>
-        <td class="bukti-cell">• SK Pembagian Tugas Mengajar &amp; Tugas Tambahan PTK Tahun 2026/2027.<br>• Bukti Pemberian Penghargaan (<i>Reward</i>/Sertifikat) Guru Dedikatif/Inovatif &amp; Buku Catatan Pembinaan Kinerja PTK.</td>
+        <td class="bukti-cell">
+          • <b>SK Pembagian Tugas PTK 2026/2027 &amp; Matriks Kesesuaian Kompetensi:</b> Memuat rincian tugas, prasyarat kompetensi, serta bukti sertifikat/kualifikasi guru pengampu.<br>
+          • <b>Pedoman Tata Kelola PTK (Mekanisme Penghargaan &amp; Sanksi):</b> Memuat rincian perilaku yang dilarang, tahapan sanksi, kriteria penghargaan (<i>reward</i>), serta Piagam Penghargaan Guru.<br>
+          • <b>Rujukan &amp; Bukti Pembayaran Gaji/Honorarium Tepat Waktu:</b> Bukti daftar penerimaan honorarium/tunjangan berdasarkan beban kerja tanpa kasus penunggakan.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1Wa8dWvVGSyd-fvU5_h0Z1MSLA_HElihp?usp=drive_link" target="_blank">📂 Unggah Eviden 5.4</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '5.4')"> Sudah Unggah</label>
@@ -544,7 +454,10 @@
         <td rowspan="4">Kepala satuan pendidikan menghadirkan layanan belajar yang partisipatif dan kolaboratif untuk tercapainya visi dan misi.</td>
         <td rowspan="4">Kepala SDN 1 Sukahaji menghadirkan kepemimpinan partisipatif dan kolaboratif untuk mewujudkan visi-misi sekolah. Pada Rapor Pendidikan, Kepemimpinan Instruksional berkategori Baik (skor 66,54; naik 9,75 poin) dan Partisipasi Warga Sekolah mencapai 70,75 (Partisipasi Murid 73,90; Partisipasi Orang Tua 67,59). Menindaklanjuti RKT 2026 untuk meningkatkan pelibatan orang tua, Kepala Sekolah bersama Komite Sekolah (Bpk. Endin Sahrudin, S.Pd.) melibatkan orang tua dan warga sekolah dalam evaluasi Rapor Pendidikan (PBD), lokakarya penyusunan KSP, rapat komite berkala, kelas parenting, pengajian bulanan, dan Pameran Kelas/Gelar Karya. Sekolah menjalin kemitraan aktif dengan 10 unsur mitra: Orang Tua/Komite, Pemdes Sukahaji &amp; Kecamatan, Puskesmas Cihaurbeuti, Disdik/Pengawas/KKG, Polsek/Koramil, Tokoh Agama, UMKM, Tokoh Budaya Sunda, Pemerhati Lingkungan, dan Komunitas Literasi untuk mendukung RKT, RKAS, dan program sekolah.</td>
         <td class="indikator-cell">6.1. Visi dan misi sekolah/madrasah yang jelas dan dipahami oleh berbagai pemangku kepentingan</td>
-        <td class="bukti-cell">• Dokumen KSP 2026/2027 (Bab II: Visi, Misi, &amp; Indikator Ketercapaian Misi).<br>• Berita Acara, Daftar Hadir, &amp; Notulen Rapat Sosialisasi Visi-Misi kepada warga sekolah &amp; orang tua, serta Foto Banner/Poster Visi-Misi.</td>
+        <td class="bukti-cell">
+          • <b>Dokumen KSP 2026/2027 (Bab II) &amp; Matriks Penerjemahan Visi-Misi ke dalam Program Konkret Sekolah.</b><br>
+          • <b>Berita Acara, Daftar Hadir, Notulen Sosialisasi, &amp; Media Komunikasi Visi-Misi:</b> Bukti diseminasi kepada PTK, orang tua, dan murid (poster/banner, grup WA paguyuban, pertemuan awal tahun) beserta dokumentasi kegiatan yang mencerminkan visi-misi.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1UqVTkcNEtE_RTD5ADpRZKdWNAeJjOrgg?usp=drive_link" target="_blank">📂 Unggah Eviden 6.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '6.1')"> Sudah Unggah</label>
@@ -552,7 +465,10 @@
       </tr>
       <tr data-komponen="kepsek">
         <td class="indikator-cell">6.2. Adanya kolaborasi atau kemitraan dengan berbagai pihak (termasuk orang tua/wali, mitra, dudi, dst) dalam rangka mendukung penyelenggaraan layanan pendidikan secara efektif</td>
-        <td class="bukti-cell">• Dokumen MoU / Kerja Sama dengan <b>10 Mitra Eksternal Sekolah</b> (Komite/Orang Tua, Pemdes Sukahaji, Puskesmas, Disdik/KKG, Polsek/Koramil, Tokoh Agama, UMKM, Tokoh Budaya, Pemerhati Lingkungan, Komunitas Literasi).<br>• Laporan Kegiatan Pameran Karya Siswa, Parenting, &amp; Pengajian Bulanan.</td>
+        <td class="bukti-cell">
+          • <b>Bukti Diseminasi Kalender Akademik/Silabus Proyek &amp; Panduan Peran Orang Tua:</b> Surat edaran/grup komunikasi dua arah yang menjelaskan target belajar/proyek murid serta batasan peran pendampingan orang tua di rumah, disertai dokumentasi pelibatan orang tua (narasumber tamu / Pameran Karya).<br>
+          • <b>Dokumen MoU &amp; Laporan Realisasi Dukungan Pihak Eksternal (Kurun 5 Tahun Terakhir):</b> Kerja sama aktif dengan 10 mitra (Pemdes Sukahaji, Puskesmas, Polsek/Koramil, UMKM, Tokoh Budaya/Agama, dll.).
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1PoTkaoajLAnXcexAiONZRsUxxaQMb2If?usp=drive_link" target="_blank">📂 Unggah Eviden 6.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '6.2')"> Sudah Unggah</label>
@@ -560,7 +476,10 @@
       </tr>
       <tr data-komponen="kepsek">
         <td class="indikator-cell">6.3. Pelaksanaan evaluasi/refleksi berbasis data yang melibatkan berbagai pihak yang relevan</td>
-        <td class="bukti-cell">• Dokumen Rapor Pendidikan SDN 1 Sukahaji.<br>• Berita Acara, Daftar Hadir, &amp; Notulen Rapat Evaluasi Program Sekolah dan Bedah Rapor Pendidikan bersama Guru &amp; Komite Sekolah.</td>
+        <td class="bukti-cell">
+          • <b>Kumpulan Sumber Data Evaluasi Internal &amp; Eksternal (1 Tahun Terakhir):</b> Rekap hasil asesmen kelas, jurnal refleksi guru, survei umpan balik murid/orang tua, masukan pengawas, dan Rapor Pendidikan SDN 1 Sukahaji.<br>
+          • <b>Undangan, Daftar Hadir, Notulen, &amp; Foto Rapat Evaluasi Tahunan / Lokakarya PBD:</b> Bukti keterlibatan aktif Kepala Sekolah, Guru, Tendik, dan Komite Sekolah dalam membedah data evaluasi.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/10yeovfP88S8D0aV1Rw9jFc3uGRRSxjwV?usp=drive_link" target="_blank">📂 Unggah Eviden 6.3</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '6.3')"> Sudah Unggah</label>
@@ -568,7 +487,10 @@
       </tr>
       <tr data-komponen="kepsek">
         <td class="indikator-cell">6.4. Perencanaan kegiatan tahunan dilakukan berdasarkan data yang diperoleh dari evaluasi/refleksi</td>
-        <td class="bukti-cell">• Dokumen Lembar Kerja Perencanaan Berbasis Data (PBD) &amp; Rencana Kerja Tahunan (RKT) SDN 1 Sukahaji Tahun 2026.<br>• Kalender Pendidikan &amp; Program Tahunan Sekolah 2026/2027.</td>
+        <td class="bukti-cell">
+          • <b>Dokumen Rencana Kerja Tahunan (RKT) 2026 &amp; Lembar PBD:</b> Memuat prioritas pembenahan berbasis hasil evaluasi tahun sebelumnya dan mencakup lengkap <b>3 bidang wajib: (i) Bidang Pembelajaran (di KSP), (ii) Bidang PTK (pelatihan/tata kelola), dan (iii) Bidang Sarana Prasarana</b>.<br>
+          • <b>Berita Acara Penyusunan RKT Bersama Komite &amp; Bukti Sosialisasi RKT/Kalender Akademik 2026/2027.</b>
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1Yy7Rx0f1ntxChSrRvo6kmLD5yHiEvo4m?usp=drive_link" target="_blank">📂 Unggah Eviden 6.4</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '6.4')"> Sudah Unggah</label>
@@ -581,7 +503,10 @@
         <td rowspan="3">Kepala satuan pendidikan memastikan pengelolaan anggaran dilakukan sesuai perencanaan berdasarkan refleksi yang berbasis data secara transparan dan akuntabel.</td>
         <td rowspan="3">Kepala SDN 1 Sukahaji memastikan pengelolaan anggaran BOSP 2026 dilaksanakan sesuai perencanaan berbasis data Rapor Pendidikan secara transparan dan akuntabel. Pada Rapor Pendidikan, Indeks Ketepatan Waktu dan Kelengkapan Pelaporan Dana BOS pada platform SDS (E.3.2) mencapai skor sempurna 100 (Baik), dan Pemanfaatan TIK Pengelolaan Anggaran mencapai 57,28. Menindaklanjuti refleksi indikator Proporsi Pemanfaatan Sumber Daya untuk Peningkatan Mutu (21,17%) dan belanja SIPLah, Kepala Sekolah bersama Tim BOS, Guru, dan Komite menyusun RKT dan RKAS (ARKAS) 2026 yang memprioritaskan 11 program benahi: pelatihan guru (HOTS &amp; kebinekaan), optimalisasi Kombel Sahakarya, pengadaan sarana keselamatan bencana (P3K, APAR, rambu evakuasi), kolaborasi orang tua, pengadaan alat peraga/media/buku via SIPLah secara penuh, serta perbaikan ruang kelas dan sanitasi. Seluruh transaksi diverifikasi, dibukukan di ARKAS, dilaporkan tepat waktu, dan dipublikasikan di papan informasi serta rapat komite.</td>
         <td class="indikator-cell">7.1. Anggaran sekolah/madrasah dikelola sesuai dengan perencanaan tahunan</td>
-        <td class="bukti-cell">• Dokumen RKT 2026 &amp; RKAS (ARKAS) Tahun Anggaran 2026 yang selaras.<br>• Buku Kas Umum (BKU), Kwitansi/Bukti Fisik Belanja, &amp; Dokumen Pembelanjaan Daring melalui platform <b>SIPLah</b>.</td>
+        <td class="bukti-cell">
+          • <b>Dokumen RKT 2026, RKAS (ARKAS) 2026, &amp; Matriks Keselarasan Waktu (<i>Cash Flow</i>) dengan Kalender Akademik:</b> Menunjukkan kesesuaian alokasi anggaran dengan 11 kegiatan prioritas hasil telaah kebutuhan (disertai catatan rasionalisasi jika ada penyesuaian).<br>
+          • <b>Berita Acara, Daftar Hadir, &amp; Notulen Rapat Penyusunan RKAS:</b> Bukti pelibatan Komite Sekolah dan perwakilan guru dalam menetapkan prioritas anggaran.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1Go5jL_u-ACF6sfN5mGc77pdtAqX64HsD?usp=drive_link" target="_blank">📂 Unggah Eviden 7.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '7.1')"> Sudah Unggah</label>
@@ -589,7 +514,10 @@
       </tr>
       <tr data-komponen="kepsek">
         <td class="indikator-cell">7.2. Rencana anggaran sekolah/madrasah menunjukkan sumber pendanaan serta alokasi pemanfaatannya</td>
-        <td class="bukti-cell">• Dokumen RKAS BOSP 2026 yang mencantumkan rincian sumber dana dan alokasi pemanfaatan pada 11 program prioritas benahi.<br>• Berita Acara &amp; Daftar Hadir Rapat Penyusunan RKAS bersama Guru dan Komite Sekolah.</td>
+        <td class="bukti-cell">
+          • <b>Dokumen Rincian Kertas Kerja RKAS (ARKAS) Tahun 2026:</b> Memuat informasi rinci dan lengkap meliputi: <b>(1) Sumber pendanaan (BOSP), (2) Kategori/jenis belanja, (3) Volume/jumlah barang-jasa, (4) Satuan harga, dan (5) Tujuan pemanfaatan</b> untuk peningkatan mutu.<br>
+          • <b>Bukti Pengesahan / Persetujuan RKAS pada Sistem ARKAS oleh Dinas Pendidikan Kab. Ciamis.</b>
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1pnHh4YTBCfjbw00pH5p5QJSw67GBnmzo?usp=drive_link" target="_blank">📂 Unggah Eviden 7.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '7.2')"> Sudah Unggah</label>
@@ -597,7 +525,10 @@
       </tr>
       <tr data-komponen="kepsek">
         <td class="indikator-cell">7.3. Ada laporan berkala tentang pemanfaatan anggaran sekolah/madrasah kepada pemangku kepentingan</td>
-        <td class="bukti-cell">• Bukti Pelaporan Dana BOSP setiap tahap melalui platform SDS/MARKAS (Skor Rapor Pendidikan = 100 / Tepat Waktu).<br>• Laporan Pertanggungjawaban (LPJ) kepada Komite/Disdik &amp; Foto Papan Informasi Publikasi Dana BOSP di sekolah.</td>
+        <td class="bukti-cell">
+          • <b>Laporan Realisasi Pemanfaatan Anggaran (LPJ BOSP, BKU, &amp; Bukti Belanja SIPLah) dalam 2 Tahun Terakhir (2025 &amp; 2026):</b> Menunjukkan kesesuaian realisasi belanja dengan perencanaan yang disahkan.<br>
+          • <b>Bukti Pelaporan ke Pemerintah Daerah via ARKAS/SDS (Skor 100) &amp; Bukti Sosialisasi Internal:</b> Notulen/daftar hadir penyampaian laporan keuangan kepada guru &amp; Komite Sekolah serta foto Papan Informasi RKAS/BOSP.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1_6_3MDzY0-q7R2auQiZ5u2VVTEZ_FfpN?usp=drive_link" target="_blank">📂 Unggah Eviden 7.3</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '7.3')"> Sudah Unggah</label>
@@ -610,7 +541,10 @@
         <td rowspan="2">Kepala satuan pendidikan memimpin pengelolaan sarana dan prasarana sesuai dengan kebutuhan pembelajaran yang berpusat pada peserta didik.</td>
         <td rowspan="2">Kepala SDN 1 Sukahaji memimpin pengelolaan sarana prasarana secara terencana untuk melayani 98 murid. Sekolah memiliki 6 Ruang Kelas (Kelas I–VI), 1 Perpustakaan, 1 Ruang Kantor/Guru, 1 Kantin, 1 Gudang, serta toilet guru dan siswa dengan air bersih sumur terlindungi yang cukup sepanjang waktu. Pada Rapor Pendidikan, Indeks Fasilitas TIK (E.7.4) mencapai skor 100 (Baik) didukung listrik PLN dan internet ICONNET, serta Indeks Sanitasi mencapai 70 (Baik). Menindaklanjuti Indeks Fasilitas Ruang (42,86) dan Kelayakan Ruang (25,00), RKT dan RKAS 2026 memprioritaskan perbaikan ringan/sedang ruang kelas, pengecatan, perbaikan atap, perbaikan tempat cuci tangan/toilet, serta pengadaan alat peraga edukatif. Seluruh sarana belajar (meja-kursi laik pakai, papan tulis, pojok baca, Chromebook, IFP, TV Digital) dicatat dalam buku inventaris dan Dapodik, dipelihara berkala, serta dimanfaatkan secara optimal dan aman dalam pembelajaran.</td>
         <td class="indikator-cell">8.1. Pemenuhan sarana dan prasarana yang sesuai dengan kebutuhan belajar murid (dapat disediakan secara mandiri maupun bermitra)</td>
-        <td class="bukti-cell">• Data Prasarana &amp; Sarana Dapodik 2026 (6 Ruang Kelas, Perpustakaan, Kantor, Kantin, Sanitasi, Listrik PLN, &amp; Internet ICONNET).<br>• RKT &amp; RKAS 2026 (Program Benahi No. 8: Pengadaan Alat Peraga Edukatif, Media Interaktif, &amp; Bahan Ajar) serta Foto Sarpras &amp; TIK.</td>
+        <td class="bukti-cell">
+          • <b>Dokumen Analisis Kebutuhan Sarpras (berdasarkan KSP) &amp; Rencana Pemenuhan di RKT-RKAS 2026:</b> Bukti pemenuhan mandiri (pengadaan Alat Peraga, Media Interaktif, Buku) maupun kemitraan/pemanfaatan lingkungan Desa Sukahaji.<br>
+          • <b>Dokumentasi Foto/Video 5 Kriteria Kenyamanan Lingkungan Belajar:</b> (1) Ventilasi &amp; pencahayaan ruang kelas memadai, (2) Ruang gerak dalam &amp; luar kelas cukup, (3) Bebas gangguan kebisingan, (4) Akses air bersih sumur terlindungi mengalir, dan (5) Kondisi toilet/jamban bersih.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1R2VwZnp4daVqFw7IJiexLOEl-4jB68I7?usp=drive_link" target="_blank">📂 Unggah Eviden 8.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '8.1')"> Sudah Unggah</label>
@@ -618,7 +552,10 @@
       </tr>
       <tr data-komponen="kepsek">
         <td class="indikator-cell">8.2. Pengelolaan sarana dan prasarana secara optimal</td>
-        <td class="bukti-cell">• Buku Inventaris Barang/Aset Sekolah &amp; Kartu Inventaris Ruangan (KIR) Kelas I–VI.<br>• Buku Administrasi Perpustakaan/Pojok Baca &amp; Jadwal Pemanfaatan Chromebook/IFP.<br>• RKT-RKAS 2026 (Program Benahi No. 11) &amp; Laporan Pemeliharaan Berkala Ruang Kelas dan Sanitasi.</td>
+        <td class="bukti-cell">
+          • <b>Jadwal Pemeliharaan Rutin (Mingguan/Bulanan), Checklist Kebersihan Kelas/Toilet, &amp; Laporan Tindak Lanjut Perbaikan Sarpras Prioritas:</b> Bukti pemeliharaan ruang kelas, atap, listrik, dan sanitasi sesuai RKT 2026.<br>
+          • <b>Buku Inventaris Aset/KIR, Jurnal Penggunaan Perpustakaan/Pojok Baca, &amp; Jurnal Pemanfaatan TIK (Chromebook, IFP, TV Digital, Alat Peraga):</b> Bukti seluruh sarpras digunakan secara aktif dan tidak ada sarana yang usang/terbengkalai.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1ob5tza3i8ThP5yR-gGJThm5mhqmgCWhq?usp=drive_link" target="_blank">📂 Unggah Eviden 8.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '8.2')"> Sudah Unggah</label>
@@ -631,7 +568,10 @@
         <td rowspan="3">Kepala satuan pendidikan mengembangkan kurikulum di tingkat satuan pendidikan yang selaras dengan kurikulum nasional.</td>
         <td rowspan="3">Kepala SDN 1 Sukahaji memimpin pengembangan Kurikulum Satuan Pendidikan (KSP) Tahun Ajaran 2026/2027 yang disahkan pada 15 Juli 2026 (SK No. 400.3.5.1/020/SD.23/Korwil 05/2026) bersama Komite Sekolah, Pengawas Bina, dan Dinas Pendidikan Kab. Ciamis. Pada Rapor Pendidikan, indikator Pengelolaan KSP (D.3.2) berkategori Baik (skor 64,21; naik 6,46 poin). KSP disusun oleh Tim Pengembang Kurikulum berbasis analisis konteks Desa Sukahaji dan Rapor Pendidikan, selaras dengan regulasi terbaru: Permendikdasmen No. 10, 11, 12, 13 Tahun 2025, Permendikdasmen No. 1 Tahun 2026, Kepmendikdasmen No. 126/P/2025 (Pembelajaran Mendalam), Kepmendikdasmen No. 127/P/2025 (Koding dan KA), serta Keputusan BSKAP No. 046/H/KR/2025. Struktur Kurikulum Merdeka Kelas I–VI mencakup Intrakurikuler berbasis Deep Learning (termasuk Bahasa Inggris Kelas III–VI), Kokurikuler "Projek Anak Hebat" (6–7 JP/minggu), Mapel Pilihan Koding &amp; KA (Kelas V–VI, 2 JP/minggu), dan Mulok Bahasa Sunda (2 JP/minggu), yang dievaluasi secara berkala.</td>
         <td class="indikator-cell">9.1. Kepemilikan kurikulum satuan pendidikan sebagai rujukan penyelenggaraan proses pembelajaran</td>
-        <td class="bukti-cell">• Dokumen <b>KSP SDN 1 Sukahaji Tahun Ajaran 2026/2027</b> yang telah disahkan (SK No. 400.3.5.1/020/SD.23/Korwil 05/2026 tanggal 15 Juli 2026).<br>• Lembar Validasi KSP oleh Pengawas Bina &amp; Kalender Akademik 2026/2027.</td>
+        <td class="bukti-cell">
+          • <b>Dokumen KSP SDN 1 Sukahaji Tahun Ajaran 2026/2027 (Disahkan 15 Juli 2026) &amp; Lampiran Silabus/ATP Lengkap Kelas I–VI:</b> Memuat tujuan pembelajaran per mapel/fase yang selaras Kurikulum Nasional.<br>
+          • <b>Bab III &amp; Bab IV KSP:</b> Memuat pengorganisasian waktu/beban belajar (Intrakurikuler, Kokurikuler <i>Projek Anak Hebat</i>, Ekstrakurikuler, Mulok Bahasa Sunda, &amp; Mapel Pilihan Koding-KA) serta pedoman sistematika penilaian hasil belajar yang dirujuk seluruh guru.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/15NVodyaExuP-PGE85l_VuJUtWU9rcMfI?usp=drive_link" target="_blank">📂 Unggah Eviden 9.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '9.1')"> Sudah Unggah</label>
@@ -639,7 +579,10 @@
       </tr>
       <tr data-komponen="kepsek">
         <td class="indikator-cell">9.2. Adanya mekanisme evaluasi terhadap penerapan kurikulum</td>
-        <td class="bukti-cell">• SK Tim Pengembang Kurikulum (TPK), Daftar Hadir, Notulen, &amp; Foto Workshop Evaluasi dan Penyusunan KSP.<br>• Dokumen Evaluasi Pelaksanaan Kurikulum (Evaluasi Harian, Per Unit, Per Semester, &amp; Tahunan sesuai Bab V KSP).</td>
+        <td class="bukti-cell">
+          • <b>Dokumen Evaluasi Penerapan Kurikulum dalam 2 Tahun Terakhir (2025/2026 &amp; 2026/2027):</b> Memuat analisis terhadap 4 sumber data: (1) Hasil belajar/asesmen kelas, (2) Refleksi guru, (3) Hasil asesmen awal murid, dan (4) Umpan balik orang tua/wali serta Rapor Pendidikan.<br>
+          • <b>SK TPK, Daftar Hadir, Notulen, &amp; Berita Acara Lokakarya Review KSP:</b> Bukti keterlibatan langsung Kepala Sekolah memimpin diskusi perbaikan kurikulum.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1_Ff-sMYSiDWwk0EbZIOhZH_B6Jp0P9i7?usp=drive_link" target="_blank">📂 Unggah Eviden 9.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '9.2')"> Sudah Unggah</label>
@@ -647,7 +590,10 @@
       </tr>
       <tr data-komponen="kepsek">
         <td class="indikator-cell">9.3. Kurikulum satuan pendidikan relevan dengan kebutuhan belajar murid dan visi misi sekolah/madrasah</td>
-        <td class="bukti-cell">• Bab I, II, &amp; III KSP 2026/2027 yang memuat Analisis Karakteristik Desa Sukahaji, Rapor Pendidikan, Visi-Misi, Struktur Kurikulum Merdeka (<i>Deep Learning</i>), Kokurikuler <i>Projek Anak Hebat</i>, Mapel Pilihan <b>Koding &amp; KA (Kelas V–VI)</b>, dan Mulok <b>Bahasa Sunda</b>.</td>
+        <td class="bukti-cell">
+          • <b>Bab I, II, &amp; III KSP 2026/2027:</b> Menunjukkan keselarasan analisis karakteristik unik SDN 1 Sukahaji dengan visi-misi serta <b>minimal $>3$ program spesifik unggulan</b> (1. Pendekatan <i>Deep Learning</i>, 2. Kokurikuler <i>Projek Anak Hebat</i> &amp; 7 Kebiasaan Anak Indonesia Hebat, 3. Mapel Pilihan Koding &amp; KA Kelas V–VI, 4. Mulok Budaya Sunda &amp; Pembiasaan Religius).<br>
+          • <b>Matriks Catatan Perubahan/Revisi KSP (<i>Before-After</i>):</b> Bukti nyata penyesuaian rancangan pembelajaran/program pada KSP 2026/2027 sebagai dampak dari hasil evaluasi kurikulum tahun sebelumnya.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1rJ4z_bfS5S_rylHL_X_CVRRzkOjLtmG9?usp=drive_link" target="_blank">📂 Unggah Eviden 9.3</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '9.3')"> Sudah Unggah</label>
@@ -660,7 +606,10 @@
         <td rowspan="3">Sekolah memastikan terbangunnya iklim kebinekaan bagi peserta didik, pendidik, dan tenaga kependidikan.</td>
         <td rowspan="3">SDN 1 Sukahaji membangun iklim kebinekaan dan kesetaraan gender melalui kebijakan sekolah, pembelajaran, pembiasaan, dan keteladanan PTK. Pada Rapor Pendidikan, Iklim Kebinekaan (D.8) berkategori Baik (skor 72,48; naik 3,48 poin), ditopang Komitmen Kebangsaan (82,42), Toleransi Agama dan Budaya (73,19; naik 14,19 poin), Kebijakan Pencegahan Intoleransi (77,50; naik 23,71 poin), Kebijakan Kesetaraan Gender (77,08; naik 19,08 poin), dan Iklim Kesetaraan Gender (67,37/Baik). Walaupun 98 murid berlatar agama dan budaya seragam, sekolah aktif menanamkan toleransi keberagaman Nusantara melalui mata pelajaran Pendidikan Pancasila, IPAS, Seni Budaya, lagu nasional/daerah, dan PHBN. Sesuai RKT 2026 (Program Benahi No. 4 dan 10), sekolah melaksanakan pelatihan guru serta sosialisasi anti-diskriminasi gender dan toleransi, menggunakan materi bebas stereotip, serta membagi peran kepemimpinan kelas dan kegiatan secara adil bagi 43 siswa laki-laki dan 55 siswi perempuan.</td>
         <td class="indikator-cell">10.1. Iklim lingkungan belajar membangun sikap positif terhadap keberagaman</td>
-        <td class="bukti-cell">• RKT 2026 (Program Benahi No. 4 tentang Iklim Kebinekaan) beserta laporan pelaksanaannya.<br>• Modul Ajar bermuatan keragaman budaya Nusantara &amp; Dokumentasi foto peringatan PHBN / Pameran Budaya.</td>
+        <td class="bukti-cell">
+          • <b>Modul Ajar &amp; LKPD Reflektif Bermuatan Toleransi Keberagaman:</b> Mengaitkan keragaman agama/budaya Nusantara dengan kehidupan sehari-hari melalui diskusi aktif (bukan sekadar hafalan).<br>
+          • <b>Laporan Program Pendukung Kokurikuler/Ekstrakurikuler &amp; Dokumentasi Lingkungan Belajar:</b> Pelaksanaan RKT 2026 (Program Benahi No. 4), Pameran Budaya/PHBN, lagu daerah, serta foto pojok baca/poster kelas bertema Bhinneka Tunggal Ika.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1SljQYgwAOabCEu9U0dajdMFGIwI_Vzkv?usp=drive_link" target="_blank">📂 Unggah Eviden 10.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '10.1')"> Sudah Unggah</label>
@@ -668,7 +617,10 @@
       </tr>
       <tr data-komponen="iklim">
         <td class="indikator-cell">10.2. Iklim lingkungan belajar yang memfasilitasi hak sipil warga untuk beribadah dan berbudaya</td>
-        <td class="bukti-cell">• Kebijakan Toleransi Beragama dan Pelestarian Budaya dalam KSP 2026/2027 &amp; Tata Tertib Sekolah.<br>• Jadwal &amp; Dokumentasi fasilitas kegiatan ibadah harian/PHBI serta pelestarian seni budaya daerah.</td>
+        <td class="bukti-cell">
+          • <b>Data Profil Agama Warga Sekolah (Dapodik 2026) &amp; Kebijakan Jaminan Hak Sipil di KSP/Tata Tertib:</b> <i>(Catatan Panduan IA2024: Berstatus <b>NA</b> karena 98 murid &amp; 10 PTK homogen 100% beragama Islam)</i>; dilengkapi SOP kesiapan sekolah memfasilitasi guru agama, tempat ibadah, dan hak hari libur raya apabila terdapat warga sekolah berlatar minoritas.<br>
+          • <b>Jadwal &amp; Dokumentasi Fasilitasi Ibadah Harian, PHBI, dan Ekspresi Budaya bagi seluruh warga sekolah.</b>
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/19tj5v8qI2-gKKJqkeiUOMDiwmcsXx3iC?usp=drive_link" target="_blank">📂 Unggah Eviden 10.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '10.2')"> Sudah Unggah</label>
@@ -676,7 +628,11 @@
       </tr>
       <tr data-komponen="iklim">
         <td class="indikator-cell">10.3. Iklim lingkungan belajar membangun kesadaran terhadap kesetaraan gender</td>
-        <td class="bukti-cell">• RKT 2026 (Program Benahi No. 10 tentang Kesetaraan Gender) &amp; Laporan Sosialisasi Anti-Diskriminasi Gender.<br>• Modul Ajar bebas stereotip &amp; Daftar Pengurus Kelas/Regu Piket/Petugas Upacara yang setara antara siswa laki-laki (43) dan perempuan (55).</td>
+        <td class="bukti-cell">
+          • <b>Modul Ajar &amp; Bahan Ajar Bebas Stereotip Gender:</b> Rancangan pembelajaran yang mengintegrasikan kesetaraan hak dan kemampuan laki-laki serta perempuan.<br>
+          • <b>Dokumen Kesetaraan Kiprah Murid Laki-laki (43) &amp; Perempuan (55):</b> Daftar Ketua/Pengurus Kelas, Regu Piket, Petugas Upacara, dan Peserta Ekstrakurikuler yang setara.<br>
+          • <b>SK Pembagian Tugas &amp; Surat Tugas Pelatihan PTK:</b> Bukti tidak adanya pembedaan hak atau stereotip gender dalam penugasan guru/tendik laki-laki dan perempuan (serta Laporan RKT Benahi No. 10).
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1ZFBu0oi97knah80VHyVERic4CzpA9Jo3?usp=drive_link" target="_blank">📂 Unggah Eviden 10.3</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '10.3')"> Sudah Unggah</label>
@@ -689,7 +645,10 @@
         <td rowspan="2">Satuan pendidikan menyediakan lingkungan belajar yang inklusif untuk memenuhi kebutuhan belajar peserta didik yang beragam.</td>
         <td rowspan="2">SDN 1 Sukahaji menyediakan lingkungan belajar inklusif yang melayani keragaman kemampuan akademik, latar sosial-ekonomi, siswa cerdas/bakat istimewa, maupun PDBK kategori ringan/lamban belajar (slow learner). Pada Rapor Pendidikan, Iklim Inklusivitas (D.10) berkategori Baik (skor 66,45; naik 4,45 poin), meliputi Layanan Disabilitas (71,33; naik 13,33 poin), Sikap terhadap Disabilitas (66,23), dan Layanan Cerdas Bakat Istimewa (65,60; naik 13,60 poin). Sesuai Program Inklusif pada Bab III KSP 2026/2027, guru melaksanakan asesmen diagnostik awal bersama orang tua untuk menyusun Program Pembelajaran Individual (PPI) serta penyesuaian TP, ATP, dan Modul Ajar. Di kelas, guru menerapkan pembelajaran berdiferensiasi melalui 6 modifikasi proses: modifikasi isi/materi, soal, alat/media, waktu (tambahan bimbingan), tempat duduk (dekat guru), dan cara (penilaian lisan &amp; pendampingan tutor sebaya), yang dievaluasi setiap 3 bulan bersama orang tua.</td>
         <td class="indikator-cell">11.1. Kebijakan dan/atau prosedur yang menghadirkan lingkungan belajar yang inklusif</td>
-        <td class="bukti-cell">• Dokumen KSP Tahun Ajaran 2026/2027 (Bab III Huruf H: Program Inklusif Sekolah, Tabel Perencanaan Inklusi, Prosedur 6 Modifikasi Pembelajaran, &amp; Kriteria Kenaikan Kelas PDBK).</td>
+        <td class="bukti-cell">
+          • <b>SK Kebijakan Sekolah Inklusif &amp; Bab III Huruf H KSP 2026/2027:</b> Kebijakan tertulis kesediaan menerima murid penyandang disabilitas dan murid berkebutuhan khusus/dukungan ekstra (<i>slow learner</i>, latar sosial-ekonomi, cerdas istimewa).<br>
+          • <b>SOP / Prosedur Tertulis Layanan Inklusif:</b> Memuat alur (1) Koordinasi awal dengan PTK dan orang tua, (2) Penyesuaian sarpras eksisting agar aksesibel, (3) Pelaksanaan asesmen diagnostik awal, serta (4) Penyusunan PPI dan 6 Modifikasi Pembelajaran.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1fasDUyPXM2Xwa6nfq1BBRxxRhsDlBPSj?usp=drive_link" target="_blank">📂 Unggah Eviden 11.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '11.1')"> Sudah Unggah</label>
@@ -697,7 +656,11 @@
       </tr>
       <tr data-komponen="iklim">
         <td class="indikator-cell">11.2. Program bagi guru, orang tua/wali, dan murid untuk menghadirkan lingkungan belajar yang inklusif</td>
-        <td class="bukti-cell">• Data Pemetaan Profil Belajar Siswa &amp; Hasil Asesmen Diagnostik Awal.<br>• Dokumen Program Pembelajaran Individual (PPI) &amp; Modul Ajar Berdiferensiasi.<br>• Catatan Evaluasi Perkembangan Siswa (3 Bulanan bersama Orang Tua) &amp; Dokumentasi foto pendampingan / tutor sebaya.</td>
+        <td class="bukti-cell">
+          • <b>Materi &amp; Laporan Pembekalan Guru/PTK (di Kombel Sahakarya):</b> Panduan cara memfasilitasi pembelajaran berdiferensiasi dan PPI bagi murid berkebutuhan khusus.<br>
+          • <b>Materi &amp; Dokumentasi Pembekalan Murid:</b> Edukasi empati, menghargai perbedaan kebutuhan, dan praktik <b>tutor sebaya</b> di kelas.<br>
+          • <b>Materi &amp; Notulen Pembekalan Orang Tua/Wali:</b> Sosialisasi penerimaan murid berkebutuhan khusus dan catatan evaluasi perkembangan siswa 3 bulanan bersama orang tua.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1QmTDEpkRaTrAUaBdVBz2975v7C7UU_bL?usp=drive_link" target="_blank">📂 Unggah Eviden 11.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '11.2')"> Sudah Unggah</label>
@@ -710,7 +673,11 @@
         <td rowspan="2">Satuan pendidikan mewujudkan iklim lingkungan belajar yang aman secara psikis dan fisik bagi peserta didik, pendidik, dan tenaga kependidikan.</td>
         <td rowspan="2">SDN 1 Sukahaji mewujudkan lingkungan belajar yang aman secara psikis dan fisik, terbukti dari capaian Rapor Pendidikan indikator Iklim Keamanan Satuan Pendidikan (D.4) yang berkategori Baik dengan skor tinggi 79,76 (naik 4,76 poin). Persentase murid aman dari perundungan mencapai 90,91% (naik 6,29 poin), aman dari hukuman fisik 90,91%, dan aman dari kekerasan seksual 90,91%. Kesejahteraan Psikologis (Wellbeing) Guru mencapai 75,95 (naik 9,95 poin), Wellbeing Murid 76,81, serta Program dan Kebijakan Pencegahan Kekerasan (E.5) mencapai 71,92 (naik 12,92 poin). Sekolah menetapkan tata tertib ramah anak, membentuk Tim Pencegahan dan Penanganan Kekerasan (TPPK), serta menerapkan SOP pencegahan dan penanganan perundungan, hukuman fisik, dan kekerasan seksual. Penguatan kapasitas guru dilakukan melalui Kombel Sahakarya, disertai sosialisasi anti-kekerasan bersama Polsek/Koramil dan Puskesmas, serta layanan pengaduan yang rahasia dan berpihak pada korban.</td>
         <td class="indikator-cell">12.1. Kebijakan dalam pencegahan dan penanganan perundungan dan kekerasan</td>
-        <td class="bukti-cell">• SK Tim Pencegahan dan Penanganan Kekerasan (TPPK) SDN 1 Sukahaji.<br>• SOP Pencegahan dan Penanganan Perundungan, Hukuman Fisik, dan Kekerasan Seksual.<br>• Tata Tertib Sekolah Ramah Anak &amp; Pakta Integritas Disiplin Positif PTK.</td>
+        <td class="bukti-cell">
+          • <b>Kebijakan Tertulis Anti-Kekerasan, Tata Tertib Sekolah Ramah Anak, &amp; Pakta Integritas PTK:</b> Melarang tegas perundungan, hukuman fisik, dan kekerasan seksual (antar-murid, PTK-murid, &amp; antar-PTK) disertai kejelasan sanksi.<br>
+          • <b>SK Tim Pencegahan dan Penanganan Kekerasan (TPPK):</b> Sesuai regulasi terdiri atas perwakilan Guru (bukan Kepala Sekolah) dan perwakilan Komite Sekolah/Orang Tua.<br>
+          • <b>SOP Penanganan Perundungan &amp; Kekerasan yang Lugas:</b> Memuat batasan jelas antara resolusi konflik vs. perundungan, mekanisme pelaporan rahasia, alur investigasi, dan perlindungan korban.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1nUc6EQajjmn1dt31TpuNvdpJsYAUFASE?usp=drive_link" target="_blank">📂 Unggah Eviden 12.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '12.1')"> Sudah Unggah</label>
@@ -718,7 +685,11 @@
       </tr>
       <tr data-komponen="iklim">
         <td class="indikator-cell">12.2. Program bagi warga sekolah/madrasah dalam pencegahan dan penanganan perundungan dan kekerasan</td>
-        <td class="bukti-cell">• Dokumentasi Sosialisasi Anti-Perundungan (<i>Stop Bullying</i>) &amp; Kekerasan Seksual kepada siswa dan orang tua bersama Polsek/Koramil/Puskesmas.<br>• Laporan penguatan disiplin positif di Kombel Sahakarya.<br>• Buku Catatan Layanan Pengaduan/Pembinaan &amp; Poster Kampanye Anti-Perundungan.</td>
+        <td class="bukti-cell">
+          • <b>KSP, Modul Ajar Intrakurikuler, &amp; Kokurikuler Bermuatan Anti-Perundungan:</b> Pembelajaran aktif dan kontekstual yang membangun perilaku saling menghargai.<br>
+          • <b>Laporan Pembekalan PTK (di Kombel Sahakarya) &amp; Sosialisasi Orang Tua/Murid (bersama Polsek/Puskesmas):</b> Materi cara membedakan konflik, perundungan, dan kekerasan serta sosialisasi alur pelaporan TPPK.<br>
+          • <b>SK Penugasan Guru Layanan Bimbingan &amp; Konseling serta Jurnal Konseling/Mediasi &amp; Foto Kotak Pengaduan/Poster Stop Bullying.</b>
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1UZIvWJ3KD2jvlAqH6E72jhD_syA0ZY_u?usp=drive_link" target="_blank">📂 Unggah Eviden 12.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '12.2')"> Sudah Unggah</label>
@@ -731,7 +702,10 @@
         <td rowspan="3">Satuan pendidikan memastikan keselamatan peserta didik, pendidik, dan tenaga kependidikan.</td>
         <td rowspan="3">SDN 1 Sukahaji memastikan keselamatan warga sekolah melalui program Satuan Pendidikan Aman Bencana (SPAB) sesuai kondisi geografis Desa Sukahaji (ketinggian ±450 mdpl) dengan potensi risiko hujan lebat, genangan air, pergerakan tanah, dan gempa bumi. Pada Rapor Pendidikan, indikator Kesiapsiagaan Bencana dan Perubahan Iklim (D.18) mencapai skor 62,83 dengan Pembelajaran Perubahan Iklim berkategori Baik (73,51) dan Pemahaman Perubahan Iklim (73,40). Menindaklanjuti indikator Sarana Keselamatan Bencana (51,21) dan Pemahaman Risiko Bencana (60,64), sekolah melaksanakan Program Benahi No. 5 dan No. 11 pada RKT dan RKAS 2026 berupa: pengadaan/pelengkapan Kotak P3K di UKS, Alat Pemadam Api Ringan (APAR), Rambu/Denah Jalur Evakuasi, dan Titik Kumpul; penyusunan SOP Keadaan Darurat; pemeriksaan/perbaikan berkala ruang kelas, atap, listrik, dan selokan; serta simulasi evakuasi bencana bersama Pemdes Sukahaji, Puskesmas, Polsek/Koramil, dan BPBD/Damkar.</td>
         <td class="indikator-cell">13.1. Iklim lingkungan belajar yang menjaga keselamatan warga sekolah/madrasah</td>
-        <td class="bukti-cell">• RKT &amp; RKAS 2026 (Program Benahi No. 11: Perbaikan Kelayakan Ruang Kelas, Atap, &amp; Sanitasi).<br>• Checklist / Jurnal Pemeriksaan Berkala Keamanan Bangunan, Instalasi Listrik, Saluran Drainase/Selokan, Pagar, dan Halaman Sekolah.</td>
+        <td class="bukti-cell">
+          • <b>Jurnal Pemeriksaan Keamanan Bangunan, RKT-RKAS 2026 (Program Benahi No. 11), &amp; Foto Kondisi Ruang:</b> Bukti atap, plafon, dinding, lantai, dan selokan aman (tidak retak besar/membahayakan) serta furnitur kelas tidak bersudut tajam/melukai.<br>
+          • <b>Dokumentasi Rambu Peringatan Bahaya &amp; Mitigasi Lingkungan Sekitar:</b> Foto stiker peringatan pada stop kontak/instalasi listrik, ketersediaan APAR, serta pagar pembatas sekolah dan prosedur pengawasan penjemputan di tepi jalan desa.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/15VbcnTHvQx5CGHA4lv8DDc5uc-uogwRE?usp=drive_link" target="_blank">📂 Unggah Eviden 13.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '13.1')"> Sudah Unggah</label>
@@ -739,7 +713,11 @@
       </tr>
       <tr data-komponen="iklim">
         <td class="indikator-cell">13.2. Kesiapan dalam pemberian Pertolongan Pertama pada Kecelakaan (P3K)</td>
-        <td class="bukti-cell">• RKT &amp; RKAS 2026 (Pengadaan perlengkapan Kotak P3K).<br>• Daftar Inventaris Kotak P3K &amp; Obat-obatan di Ruang UKS/Kantor, SOP Penanganan P3K, serta Buku Catatan Layanan UKS / Rujukan Puskesmas.</td>
+        <td class="bukti-cell">
+          • <b>Foto Ruang UKS &amp; MoU Kemitraan dengan Puskesmas Cihaurbeuti:</b> Bukti akses layanan kesehatan dan rujukan faskes terdekat.<br>
+          • <b>Panduan/SOP P3K serta Laporan/Sertifikat Pelatihan P3K bagi PTK (dalam 2 Tahun Terakhir):</b> Pembekalan penanganan luka, pendarahan, demam, atau pingsan.<br>
+          • <b>Daftar Inventaris &amp; Foto Kotak P3K (RKT Benahi No. 5):</b> Menunjukkan kotak P3K mudah diakses (tidak terkunci), obat-obatan siap pakai (tidak kedaluwarsa), dan lengkap (kasa steril, perban, antiseptik, obat demam).
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1KbHXH44aZ3Hhj1xIGo2IyIgUbKI9OR3F?usp=drive_link" target="_blank">📂 Unggah Eviden 13.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '13.2')"> Sudah Unggah</label>
@@ -747,7 +725,11 @@
       </tr>
       <tr data-komponen="iklim">
         <td class="indikator-cell">13.3. Kesiapan sekolah/madrasah dalam menghadapi ragam potensi bencana</td>
-        <td class="bukti-cell">• RKT &amp; RKAS 2026 (Program Benahi No. 5: Pengadaan APAR, Rambu Evakuasi, &amp; Simulasi Bencana).<br>• SK Tim Siaga Bencana (SPAB), SOP Keadaan Darurat, Denah Jalur Evakuasi, Rambu Titik Kumpul, &amp; Daftar Kontak Darurat.<br>• Dokumentasi Foto Kegiatan Simulasi Evakuasi Bencana bersama Pemdes/Puskesmas/BPBD.</td>
+        <td class="bukti-cell">
+          • <b>SK Tim SPAB &amp; SOP Simulasi Evakuasi Bencana (Memenuhi 4 Kriteria Panduan):</b> Memuat (1) Tanda bunyi peringatan bahaya/bel darurat, (2) Peta/rambu jalur evakuasi yang mudah dicapai, (3) Cara melindungi diri &amp; lokasi Titik Kumpul, serta (4) Panduan jelas bagi tamu/pengunjung (<i>visitor</i>).<br>
+          • <b>Laporan &amp; Foto Simulasi Evakuasi Bencana Rutin (Minimal 1x dalam 1 Tahun Terakhir)</b> bersama Puskesmas/Pemdes/BPBD.<br>
+          • <b>Berita Acara Reviu Berkala Prosedur Evakuasi (2 Tahun Terakhir):</b> Penyesuaian denah/SOP pasca perbaikan ruang kelas.
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1V3GaDQ3tX2xZaOdbZFJUEZ5zyA1IalIB?usp=drive_link" target="_blank">📂 Unggah Eviden 13.3</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '13.3')"> Sudah Unggah</label>
@@ -760,7 +742,12 @@
         <td rowspan="3">Satuan pendidikan menjamin lingkungan yang sehat dan memiliki/melaksanakan program yang membangun kesehatan fisik dan mental pada peserta didik, pendidik, dan tenaga kependidikan.</td>
         <td rowspan="3">SDN 1 Sukahaji menjamin lingkungan sehat melalui program PHBS, UKS, sanitasi, pembiasaan harian, dan kemitraan dengan Puskesmas Cihaurbeuti. Pada Dapodik dan Rapor Pendidikan 2026, Indeks Sanitasi (E.7.2) berkategori Baik (skor 70,00): tersedia air bersih sumur terlindungi sepanjang waktu, selokan bebas genangan, tempat sampah di tiap kelas, toilet perempuan dilengkapi tempat sampah tertutup dan cermin, TPS tertutup dengan pengangkutan rutin, kegiatan cuci tangan pakai sabun berkelompok 5 hari/minggu, serta media KIE di kelas, toilet, selasar, UKS, dan kantin. Menindaklanjuti RKT 2026 pada 7 Kebiasaan Anak Indonesia Hebat (D.19), sekolah melaksanakan Senam Pagi Bersama, pembiasaan bekal sehat bergizi, pengawasan kantin, Gerakan Pungut Sampah (GPS), dan pemeriksaan kesehatan/BIAS bersama Puskesmas. Capaian pencegahan rokok, miras, dan narkoba sangat baik (sikap guru 85,55; murid aman 86,36%), disertai edukasi kesehatan mental, bijak ber-gawai, dan kesehatan reproduksi/pubertas.</td>
         <td class="indikator-cell">14.1. Iklim lingkungan belajar membangun pola hidup bersih dan sehat</td>
-        <td class="bukti-cell">• Program Kerja UKS, PHBS, &amp; RKT 2026 (Program Benahi No. 6: <i>7 Kebiasaan Anak Indonesia Hebat</i> – Senam Pagi, Makan Sehat Bergizi, &amp; Kerja Bakti).<br>• MoU &amp; Laporan Pemeriksaan Kesehatan Berkala/BIAS bersama Puskesmas Cihaurbeuti.<br>• Dokumentasi Senam Pagi, Cuci Tangan Berkelompok (5 hari/minggu), GPS, Kantin Sehat, &amp; Sanitasi Sekolah.</td>
+        <td class="bukti-cell">
+          • <b>Modul Ajar Bermuatan PHBS &amp; Dokumentasi Cuci Tangan Pakai Sabun (5 Hari/Minggu):</b> Budaya cuci tangan sebelum/sesudah makan dan berkegiatan.<br>
+          • <b>Instrumen Pengawasan Kantin/Jajanan Sehat &amp; Dokumentasi Bekal Bergizi:</b> Bukti makanan di sekolah bebas pemanis buatan, pewarna tekstil, dan pengawet berbahaya.<br>
+          • <b>Foto Kebersihan Lingkungan, Tempat Sampah Tiap Kelas, &amp; TPS Tertutup.</b><br>
+          • <b>Jadwal Harian (Memuat Waktu Istirahat 30 Menit), Program Senam Pagi Bersama (RKT Benahi No. 6), &amp; Foto Lapangan Olahraga.</b>
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1O0XZVSU3fszWvUrsToj94XvBc1BEtj9l?usp=drive_link" target="_blank">📂 Unggah Eviden 14.1</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '14.1')"> Sudah Unggah</label>
@@ -768,7 +755,11 @@
       </tr>
       <tr data-komponen="iklim">
         <td class="indikator-cell">14.2. Program untuk membangun kesehatan mental pada murid, guru, dan tenaga kependidikan</td>
-        <td class="bukti-cell">• Dokumentasi kegiatan <i>Embun Pagi</i> / Refleksi Perasaan &amp; Pembelajaran yang menggembirakan (<i>Joyful Learning</i>).<br>• Catatan Layanan Konsultasi/Bimbingan Siswa oleh Wali Kelas serta kerja sama dengan Orang Tua &amp; Puskesmas.</td>
+        <td class="bukti-cell">
+          • <b>KSP, Modul Ajar, &amp; Dokumentasi Kampanye Kesehatan Mental (<i>Embun Pagi</i> / Pengelolaan Emosi):</b> Integrasi kesadaran kesehatan mental dan pencegahan stigma di kelas.<br>
+          • <b>Materi Pembekalan Guru tentang Bimbingan Penyuluhan &amp; Jurnal Layanan Konseling Siswa:</b> Dilaksanakan oleh wali kelas/guru yang berkompetensi.<br>
+          • <b>Dokumentasi Foto Ruang Guru / Ruang Istirahat PTK yang Nyaman dan Terpisah dari Ruang Murid.</b>
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1kYPdW_1Vhbs1JkfW-CAdNg4KpYLh28WJ?usp=drive_link" target="_blank">📂 Unggah Eviden 14.2</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '14.2')"> Sudah Unggah</label>
@@ -776,7 +767,11 @@
       </tr>
       <tr data-komponen="iklim">
         <td class="indikator-cell">14.3. Edukasi tentang pencegahan adiksi dan kesehatan reproduksi</td>
-        <td class="bukti-cell">• Media KIE (Poster/Stiker di 5 area: Ruang Kelas, Toilet, Selasar, UKS, &amp; Kantin) tentang PHBS, Bahaya Rokok/Narkoba, &amp; Bijak Bermedia Digital.<br>• Modul Ajar PJOK &amp; IPAS yang memuat materi kesehatan reproduksi, masa pubertas, perlindungan diri, dan pencegahan zat adiktif.</td>
+        <td class="bukti-cell">
+          • <b>Modul Ajar &amp; Laporan Kegiatan Rutin Pencegahan Adiksi:</b> Edukasi sistemik tentang bahaya adiksi rokok, miras, narkoba, serta kecanduan gawai/media sosial/gim.<br>
+          • <b>Kebijakan &amp; Strategi Mitigasi Sekolah Bebas Adiksi:</b> Tata tertib larangan merokok/narkoba, pembatasan gawai di sekolah, dan Media KIE di 5 area sekolah.<br>
+          • <b>Modul Ajar IPAS/PJOK &amp; Dokumentasi Edukasi Kesehatan Reproduksi dan Pubertas (Khususnya Kelas V &amp; VI) bersama Puskesmas Cihaurbeuti.</b>
+        </td>
         <td class="drive-cell">
           <a class="btn-drive" href="https://drive.google.com/drive/folders/1wMxGm_wLDxlfxd37b-opEqkDCp1XZVu2?usp=drive_link" target="_blank">📂 Unggah Eviden 14.3</a>
           <label class="check-label"><input type="checkbox" onchange="simpanProgres(this, '14.3')"> Sudah Unggah</label>
@@ -800,7 +795,6 @@
 </div>
 
 <script>
-// Simpan & Muat Progres Checklist di Browser Lokal
 function muatProgres() {
   const checkboxes = document.querySelectorAll('.check-label input[type="checkbox"]');
   let selesai = 0;
@@ -833,7 +827,6 @@ function updateProgressBar(selesai, total) {
   document.getElementById('progressText').innerText = selesai + ' / ' + total + ' Indikator Selesai (' + persen + '%)';
 }
 
-// Filter Komponen
 function filterKomponen(kategori, btn) {
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
@@ -847,7 +840,6 @@ function filterKomponen(kategori, btn) {
   });
 }
 
-// Pencarian Cepat
 function filterTable() {
   const input = document.getElementById('searchInput').value.toLowerCase();
   const rows = document.querySelectorAll('#tabelAkreditasi tbody tr');
@@ -857,7 +849,6 @@ function filterTable() {
   });
 }
 
-// Unduh Word (.doc) Rapi
 function unduhWord() {
   var css = '<style>' +
     '@page WordSection1 { size: 33.0cm 21.0cm; mso-page-orientation: landscape; margin: 1.2cm 1.2cm 1.2cm 1.2cm; }' +
@@ -875,14 +866,14 @@ function unduhWord() {
   var konten = '<html xmlns:o="urn:schemas-microsoft-com:office:office" ' +
     'xmlns:w="urn:schemas-microsoft-com:office:word" ' +
     'xmlns="http://www.w3.org/TR/REC-html40">' +
-    '<head><meta charset="utf-8"><title>Portal Akreditasi SDN 1 Sukahaji 2026</title>' + css + '</head>' +
+    '<head><meta charset="utf-8"><title>Portal Akreditasi SDN 1 Sukahaji 2026 (Sesuai Panduan BAN-PDM)</title>' + css + '</head>' +
     '<body><div class="WordSection1">' + document.getElementById("AreaDokumen").innerHTML + '</div></body></html>';
 
   var blob = new Blob(['\ufeff', konten], { type: 'application/msword' });
   var url = URL.createObjectURL(blob);
   var link = document.createElement('a');
   link.href = url;
-  link.download = 'Portal_Pemetaan_Eviden_Akreditasi_SDN_1_SUKAHAJI_2026.doc';
+  link.download = 'Pemetaan_Indikator_dan_Eviden_Akreditasi_SDN_1_SUKAHAJI_2026_Sesuai_Panduan_BANPDM.doc';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
